@@ -1,6 +1,8 @@
 body > header {
+  position: relative;
   padding: 1rem;
   background-color: #000;
+  z-index: 2; /* for sliding top-nav */
 }
 
 footer {
@@ -15,39 +17,48 @@ footer {
   display: inline-block;
 }
 
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.navbar-toggler {
+#nav-toggle {
   position: absolute;
-  top: -65px;
+  top: 23px;
   right: 10px;
-  background-color: #fff;
+  width: 60px;
+  height: 45px;
+  z-index: 2;
+  transition-duration: .75s;
+  transform: rotate(0deg);
+  transition-duration: .75s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+#nav-toggle.active {
+  transform: rotate(90deg);
 }
 
-.navbar-collapse {
-  padding-bottom: 1rem;
+#top-nav {
+  position: relative;
+  background-color: cyan;
 }
-
-/*
-.navbar-light .navbar-toggler-icon {
-  background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+#top-nav .wrapper { /* needed so we don't get an hscroll bar  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  overflow-x: hidden;
 }
-.navbar-light .navbar-text {
-  color:rgba(0,0,0,.5)
+#top-nav .menu {
+  position: absolute;
+  top: 0;
+  left: 100vw; /* offscreen to the right  */
+  height: inherit;
+  width: inherit;
+  background-color: cyan;
+  z-index: 1;
+  transition-property: left;
+  transition-duration: .75s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
-.navbar-light .navbar-text a {
-  color:rgba(0,0,0,.9)
-}
-.navbar-light .navbar-text a:focus,.navbar-light .navbar-text a:hover {
-  color:rgba(0,0,0,.9)
-}
-*/
-
-.navbar-dark .navbar-toggler-icon { /* use .navbar-light icon */
-  background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+#top-nav.active .menu {
+  left: 0;
 }
 
 .no-padding {

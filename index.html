@@ -22,36 +22,17 @@
 
 	<!-- hamburger menu -->
 
-	<nav class="navbar navbar-expand-* navbar-dark bg-dark">
-		<a class="navbar-brand" href="#"><!-- forces toggle to the right --></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-			aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">My Work</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
-				</li>
-				<!-- <li class="nav-item">
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-				</li> -->
-			</ul>
-			<!-- <form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form> -->
+	<img id="nav-toggle" src="assets/nav-toggle.svg" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation"></img>
+
+	<!-- slideout menu -->
+
+	<section id="top-nav" class="container-fluid no-padding">
+		<div class="wrapper">
+			<div class="menu">
+					menu
+			</div>
 		</div>
-	</nav>
+	</section>
 
 	<!-- slideshow -->
 
@@ -100,6 +81,16 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	
+	<script>
+			$(function() {
+				$('#nav-toggle').click(function() {
+					var isActive = !$('#nav-toggle').hasClass('active');
+					$(this).toggleClass('active').attr('aria-expanded', isActive ? 'true' : 'false');
+					$('#top-nav').toggleClass('active');
+				});
+			});
+		</script>
+	
 </body>
-
 </html>
