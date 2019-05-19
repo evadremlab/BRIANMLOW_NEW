@@ -1,20 +1,26 @@
 body > header {
+  display: flex;
   position: relative;
   padding: 1rem;
   background-color: #000;
-  z-index: 2; /* for sliding top-nav */
+  z-index: 1; /* for sliding top-nav */
+  height: 5.75rem;
 }
 
 footer {
-  color: #fff;
+  color: #999;
+  text-align: right;
+  font-size: smaller;
   background-color: #000;
+  height: 1.25rem;
 }
 
-#featured-projects article {
-  width: 100px;
-  border: 1px solid #000;
-  text-align: center;
-  display: inline-block;
+.fixed-bottom { /* from Bootstrap css */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 #nav-toggle {
@@ -23,11 +29,9 @@ footer {
   right: 10px;
   width: 60px;
   height: 45px;
-  z-index: 2;
-  transition-duration: .75s;
   transform: rotate(0deg);
-  transition-duration: .75s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
 }
 #nav-toggle.active {
   transform: rotate(90deg);
@@ -37,30 +41,73 @@ footer {
   position: relative;
   background-color: cyan;
 }
-#top-nav .wrapper { /* needed so we don't get an hscroll bar  */
+#top-nav .wrapper { /* so we don't get an hscroll bar on the offscreen menu below  */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 10rem;
-  overflow-x: hidden;
+  height: calc(100vh - 5.75rem - 1.25rem); /* minus header and footer, so we don't get a vscrollbar */
+  overflow: hidden;
 }
 #top-nav .menu {
   position: absolute;
   top: 0;
   left: 100vw; /* offscreen to the right  */
-  height: inherit;
   width: inherit;
-  background-color: cyan;
-  z-index: 1;
+  height: inherit;
+  background-color: #111;
+  z-index: 1; /* above the page content */
   transition-property: left;
-  transition-duration: .75s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
 }
 #top-nav.active .menu {
   left: 0;
 }
+#top-nav ul {
+  padding: 0 0 1rem 0;
+  list-style: none;
+  /* background-color: #111; */
+}
+#top-nav li {
+  visibility: hidden;
+  color: #999;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+#top-nav.active li {
+  animation: .5s menuFadeIn;
+  animation-fill-mode: forwards;
+}
+#top-nav.active li:nth-child(2) {
+  animation-delay: .1s;
+}
+#top-nav.active li:nth-child(3) {
+  animation-delay: .2s;
+}
+#top-nav.active li:nth-child(4) {
+  animation-delay: .3s;
+}
+#top-nav.active li:hover {
+  color: #ccc;
+}
+#top-nav.active li:nth-child(odd) {
+  background-color: #1d1d1d; /* lighter than #111 */
+}
 
-.no-padding {
-  padding: 0 0 0 0;
+#featured-projects article {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+@keyframes menuFadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
