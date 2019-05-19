@@ -23,7 +23,7 @@ footer {
   z-index: 1030;
 }
 
-#nav-toggle {
+#menu-toggle {
   position: absolute;
   top: 23px;
   right: 10px;
@@ -33,15 +33,15 @@ footer {
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
 }
-#nav-toggle.active {
+#menu-toggle.open {
   transform: rotate(90deg);
 }
 
-#top-nav {
+#slideout-menu {
   position: relative;
   background-color: cyan;
 }
-#top-nav .wrapper { /* so we don't get an hscroll bar on the offscreen menu below  */
+#slideout-menu .wrapper { /* so we don't get an hscroll bar on the offscreen menu below  */
   position: absolute;
   top: 0;
   left: 0;
@@ -49,7 +49,7 @@ footer {
   height: calc(100vh - 5.75rem - 1.25rem); /* minus header and footer, so we don't get a vscrollbar */
   overflow: hidden;
 }
-#top-nav .menu {
+#slideout-menu .menu {
   position: absolute;
   top: 0;
   left: 100vw; /* offscreen to the right  */
@@ -61,38 +61,42 @@ footer {
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
 }
-#top-nav.active .menu {
+#slideout-menu.open .menu {
   left: 0;
 }
-#top-nav ul {
-  padding: 0 0 1rem 0;
+#slideout-menu ul {
   list-style: none;
-  /* background-color: #111; */
+  padding: 0 0 1rem 0;
 }
-#top-nav li {
+#slideout-menu li {
   visibility: hidden;
   color: #999;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   padding-left: 1rem;
 }
-#top-nav.active li {
+#slideout-menu li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+#slideout-menu.open li {
   animation: .5s menuFadeIn;
   animation-fill-mode: forwards;
 }
-#top-nav.active li:nth-child(2) {
+#slideout-menu.open li:nth-child(2) {
   animation-delay: .1s;
 }
-#top-nav.active li:nth-child(3) {
+#slideout-menu.open li:nth-child(3) {
   animation-delay: .2s;
 }
-#top-nav.active li:nth-child(4) {
+#slideout-menu.open li:nth-child(4) {
   animation-delay: .3s;
 }
-#top-nav.active li:hover {
+#slideout-menu.open li:hover {
   color: #ccc;
 }
-#top-nav.active li:nth-child(odd) {
+#slideout-menu.open li:nth-child(odd) {
   background-color: #1d1d1d; /* lighter than #111 */
 }
 

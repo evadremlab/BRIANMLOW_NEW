@@ -15,38 +15,33 @@
 <body>
 	<header>
 		<a href="index.html">
-			<img src="assets/bml-logo.png" width="270">
+			<img src="assets/bml-logo.png">
 		</a>
-		<!-- hamburger menu -->
-		<img id="nav-toggle" src="assets/nav-toggle.svg" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation"></img>
+		<img id="menu-toggle" src="assets/menu-toggle.svg" aria-controls="slideout-menu" aria-expanded="false" aria-label="Toggle navigation"></img>
 	</header>
 
 	<div id="main">
-		<!-- slideout menu -->
-		<section id="top-nav">
+		<section id="slideout-menu">
 			<div class="wrapper">
-				<div class="menu">
+				<nav class="menu">
 					<ul>
-						<li>home</li>
-						<li>about me</li>
-						<li>my work</li>
-						<li>contact</li>
+						<li><a href="#">home</a></li>
+						<li><a href="#">about me</a></li>
+						<li><a href="#">my work</a></li>
+						<li><a href="#">contact</a></li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 		</section>
 	
-		<!-- slideshow -->
 		<section id="slides">
 			slides
 		</section>
 
-		<!-- tagline -->
 		<section id="tagline">
 			tagline
 		</section>
 	
-		<!-- featured projects -->
 		<section id="featured-projects">
 			<header>Featured Projects</header>
 			<article class="project">
@@ -65,22 +60,20 @@
 		
 	</div>
 
-	<!-- footer -->
 	<footer class="fixed-bottom">
 		&copy; 2019 Brian M Low. All Rights Reserved.
 	</footer>
 
-	<!-- scripts -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
 	
 	<script>
 			$(function() {
-				$('#nav-toggle').click(function() {
-					var isActive = !$('#nav-toggle').hasClass('active');
-					$(this).toggleClass('active').attr('aria-expanded', isActive ? 'true' : 'false');
-					$('#top-nav').toggleClass('active');
+				$('#menu-toggle').click(function() {
+					var isOpen = !$(this).hasClass('open');
+					$(this).toggleClass('open').attr('aria-expanded', isOpen ? 'true' : 'false');
+					$('#slideout-menu').toggleClass('open');
 				});
 			});
 		</script>
