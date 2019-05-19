@@ -48,7 +48,7 @@ footer {
   height: calc(100vh - 5.75rem - 1.25rem); /* minus header and footer, so we don't get a vscrollbar */
   overflow: hidden;
 }
-#slideout-menu .menu {
+#slideout-menu nav {
   position: absolute;
   top: 0;
   left: 100vw; /* offscreen to the right  */
@@ -60,7 +60,7 @@ footer {
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
 }
-#slideout-menu.open .menu {
+#slideout-menu.open nav {
   left: 0;
 }
 #slideout-menu ul {
@@ -157,6 +157,32 @@ footer {
 #featured-projects img {
   max-width: 100%;
   max-height: 100%;
+}
+
+/* http://thenewcode.com/844/Easy-Masonry-Layout-With-Flexbox */
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  max-height: 100px; /* closed up the space between rows, not sure why */
+}
+.flexbox.flexbox-row {
+  flex-direction: row;
+}
+.flexbox.flexbox-row article {
+  width: 25%; /* 4 columns */
+}
+
+.flexbox.flexbox-col {
+  flex-direction: row;
+}
+.flexbox.flexbox-col article {
+  width: 25%; /* 4 columns */
+}
+
+.flexbox img {
+  width: 100%; /* scale to fit */
 }
 
 .hidden {

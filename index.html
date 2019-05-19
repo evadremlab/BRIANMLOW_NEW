@@ -15,12 +15,12 @@
 		<a href="index.html">
 			<img src="assets/bml-logo.png">
 		</a>
-		<img id="menu-toggle" src="assets/menu-toggle.svg"></img>
+		<img id="menu-toggle" src="assets/menu-toggle.svg" />
 	</header>
 	<div id="main">
 		<section id="slideout-menu">
 			<div class="container">
-				<nav class="menu">
+				<nav>
 					<ul>
 						<li><a href="#">home</a></li>
 						<li><a href="#">about me</a></li>
@@ -30,21 +30,21 @@
 				</nav>
 			</div>
 		</section>
-		<section id="slideshow">
-			<img src="assets/slideshow/urbantilt.png" />
+		<section id="slideshow" class="hidden">
+			<div class="slide">
+				<img src="assets/slideshow/urbantilt.png" />
+				<!-- <div class="overlay">
+					<div class="industry">Industry | Photography</div>
+					<div class="title">UrbanTilt</div>
+					<div class="link">View Project</div>
+				</div> -->
+			</div>
 		</section>
-		<section id="tagline">
-			<header>my tagline</header>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim at est elementum convallis. 
-				Vestibulum id purus non tellus tincidunt convallis. Curabitur eu luctus nibh. Cras nisi justo, tempus id imperdiet id, 
-				blandit vel sem. Vivamus commodo ante sit amet tristique aliquet. Nullam eu gravida augue. Maecenas viverra sodales ante, 
-				eget maximus mi gravida eu. Fusce consequat risus a lacinia sollicitudin. Suspendisse vel dolor vitae lorem posuere commodo 
-				vitae non mauris. Cras vitae rhoncus velit. Donec quis nibh pellentesque, sollicitudin purus eu, porta nisl. Vestibulum 
-				tempor, nisi id blandit semper, ante felis dictum augue, nec facilisis nulla sapien ac purus.
-			</p>
+		<section id="tagline" class="hidden">
+			<header>Deep Thoughts &trade;</header>
+			<p><!-- random  content here --></p>
 		</section>
-		<section id="featured-projects">
+		<!-- <section id="featured-projects">
 			<header>Featured Projects</header>
 			<article>
 				<img src="assets/featured-projects/crayola.png" />
@@ -73,6 +73,33 @@
 			<article>
 				<img src="assets/featured-projects/inside.png" />
 			</article>
+		</section> -->
+		<section id="featured-projects-flex" class="flexbox flexbox-row">
+			<!-- <header>Featured Projects</header> -->
+			<article>
+				<img src="assets/featured-projects/crayola.png" />
+			</article>
+			<article>
+				<img src="assets/featured-projects/inside.png" />
+			</article>
+			<article>
+				<img src="assets/featured-projects/crayola.png" />
+			</article>
+			<article>
+				<img src="assets/featured-projects/inside.png" />
+			</article>
+			<article>
+				<img src="assets/featured-projects/crayola.png" />
+			</article>
+			<article>
+				<img src="assets/featured-projects/crayola.png" />
+			</article>
+			<article>
+				<img src="assets/featured-projects/inside.png" />
+			</article>
+			<article>
+				<img src="assets/featured-projects/crayola.png" />
+			</article>
 		</section>
 	</div>
 	<footer class="fixed-bottom">
@@ -80,7 +107,18 @@
 	</footer>
 	<script src="scripts/jquery-3.3.1.slim.min.js"></script>
 	<script>
+		var deepThoughts = [
+			"If I ever opened a trampoline store, I don't think I'd call it Trampo-Land, because you might think it was a store for tramps, which is not the impression we are trying to convey with our store. On the other hand, we would not prohibit tramps from browsing, or testing the trampolines, unless a tramp's gyrations seemed to be getting out of control.",
+			"If you're ever stuck in some thick undergrowth, in your underwear, don't stop and think of what other words have 'under' in them, because that's probably the first sign of jungle madness.",
+			"It makes me mad when people say I turned and ran like a scared rabbit. Maybe it was like an angry rabbit, who was running to go fight in another fight, away from the first fight.",
+			"The memories of my family outings are still a source of strength to me. I remember we'd all pile into the car - I forget what kind it was - and drive and drive. I'm not sure where we'd go, but I think there were some trees there. The smell of something was strong in the air as we played whatever sport we played. I remember a bigger, older guy we called 'Dad'. We'd eat some stuff, or not, and then I think we went home. I guess some things never leave you."
+		];
+		function randomDeepThought() {
+			var rnd = Math.floor(Math.random() * deepThoughts.length);
+			$('#tagline p').text(deepThoughts[rnd]);
+		}
 		$(function() {
+			randomDeepThought();
 			$('#menu-toggle').click(function() {
 				$(this).toggleClass('open');
 				$('#slideout-menu').toggleClass('open');
