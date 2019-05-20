@@ -132,7 +132,7 @@ footer {
   font-weight: bold;
 }
 
-/* https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/ */
+/* https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout */
 
 #featured-projects {
   position: relative;
@@ -153,15 +153,14 @@ footer {
   flex-wrap: wrap;
 }
 #featured-projects article {
-  flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
   height: 250px;
-  /* border: 1px solid #fff; */
   overflow: hidden;
+  flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
 }
-#featured-projects article:nth-child(1) {
+#featured-projects article:nth-child(1) { /* first project */
   flex: 1 0 35%;
 }
-#featured-projects article:nth-child(9) {
+#featured-projects article:nth-last-child() { /* last project */
   flex: 1 0 35%;
 }
 #featured-projects img {
