@@ -132,22 +132,10 @@ footer {
   font-weight: bold;
 }
 
+/* https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/ */
+
 #featured-projects {
   position: relative;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: 25vh;  */
-  /* must be >= height of images or we get a blank space between rows */
-}
-#featured-projects:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-#featured-projects .container {
-  float: left;
-  width: 100%;
 }
 #featured-projects header {
   display: inline-block;
@@ -160,15 +148,24 @@ footer {
   padding: 0.5rem 1rem 0.5rem 5rem;
   z-index: 1; /* so it appears over container */
 }
+#featured-projects .container {
+  display: flex;
+  flex-wrap: wrap;
+}
 #featured-projects article {
-  float: left;
-  width: 25%;
-  /* flex: 0 0 25%; */
-  /* flex-grow, flex-shrink, flex-basis */
+  flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
+  height: 250px;
+  /* border: 1px solid #fff; */
+  overflow: hidden;
+}
+#featured-projects article:nth-child(1) {
+  flex: 1 0 35%;
+}
+#featured-projects article:nth-child(9) {
+  flex: 1 0 35%;
 }
 #featured-projects img {
   max-width: 100%;
-  max-height: 100%;
 }
 
 .hidden {
