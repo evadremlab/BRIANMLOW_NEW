@@ -3,7 +3,6 @@ body > header {
   position: relative;
   padding: 1rem;
   background-color: #000;
-  height: 5.75rem;
 }
 
 footer {
@@ -11,7 +10,6 @@ footer {
   text-align: right;
   font-size: smaller;
   background-color: #000;
-  height: 1.25rem;
 }
 
 .fixed-bottom { /* from Bootstrap css */
@@ -99,8 +97,29 @@ footer {
   background-color: #1d1d1d; /* lighter than #111 */
 }
 
+#slideshow .slide {
+  position: relative;
+}
 #slideshow img {
   width: 100%; /* scale to fit window */
+}
+#slideshow .overlay {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  padding: 1rem;
+  color: #111;
+}
+#slideshow .overlay .industry {
+  font-size: 3rem;
+}
+#slideshow .overlay .title {
+  font-size: 5rem;
+  font-weight: bold;
+}
+#slideshow .overlay .link {
+  font-size: 2rem;
+  text-decoration: none;  
 }
 
 #tagline {
@@ -121,13 +140,13 @@ footer {
   font-size: 2rem;
   font-style: italic;
   line-height: 2.2rem;
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 3rem 1rem;
 }
-#tagline p:before { /* left quotation mark */
+#tagline p::before { /* left quotation mark */
   content: "\201C"; /* https://css-tricks.com/snippets/html/glyphs */
   font-weight: bold;
 }
-#tagline p:after { /* right quotation mark */
+#tagline p::after { /* right quotation mark */
   content: "\201D";
   font-weight: bold;
 }
@@ -135,7 +154,7 @@ footer {
 /* https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout */
 
 #featured-projects {
-  position: relative;
+  position: relative; /* so we can position header*/
 }
 #featured-projects header {
   display: inline-block;
@@ -153,9 +172,17 @@ footer {
   flex-wrap: wrap;
 }
 #featured-projects article {
+  position: relative; /* for positioning the mask and overlay */
   height: 250px;
   overflow: hidden;
   flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
+  background-size: cover; /* for the background image below */
+}
+#featured-projects article.crayola {
+  background-image: url('../assets/featured-projects/crayola.png');
+}
+#featured-projects article.inside {
+  background-image: url('../assets/featured-projects/inside.png');
 }
 #featured-projects article:nth-child(1) { /* first project */
   flex: 1 0 35%;
@@ -163,8 +190,45 @@ footer {
 #featured-projects article:nth-last-child() { /* last project */
   flex: 1 0 35%;
 }
-#featured-projects img {
-  max-width: 100%;
+#featured-projects .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #000;
+  z-index: 1;
+  transition: opacity 0.25s ease;
+}
+#featured-projects .mask:hover {
+  opacity: 0.7;
+}
+#featured-projects .overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+#featured-projects .mask:hover .overlay {
+  opacity: 1;
+}
+#featured-projects .industry {
+  font-size: 1rem;
+}
+#featured-projects .title {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+#featured-projects .link {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .hidden {
