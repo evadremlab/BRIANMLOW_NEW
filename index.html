@@ -1,102 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Brian M Low | Graphic Design</title>
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/site.css">
-	<style>
-	</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Brian M Low | Graphic Design</title>
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <style>
+  </style>
 </head>
+
 <body>
-	<header>
-		<a href="index.html">
-			<img src="assets/bml-logo.png">
-		</a>
-		<img id="menu-toggle" src="assets/menu-toggle.svg" />
-	</header>
-	<div id="main">
-		<section id="slideout-menu">
-			<div class="container">
-				<nav>
-					<ul>
-						<li><a href="#">home</a></li>
-						<li><a href="#">about me</a></li>
-						<li><a href="#">my work</a></li>
-						<li><a href="#">contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
-		<section id="slideshow">
-			<div class="slide">
-				<img src="assets/slideshow/urbantilt.png" />
-				<div class="overlay">
-					<div class="industry">Industry | Photography</div>
-					<div class="title">UrbanTilt</div>
-					<a href="#" class="link">View Project</a>
-				</div>
-			</div>
-		</section>
-		<section id="tagline">
-			<header>Deep Thoughts &trade;</header>
-			<p><!-- random  content here --></p>
-		</section>
-		<section id="featured-projects">
-			<header>Featured Projects</header>
-			<div class="container">
-				<article class="crayola">
-					<div class="mask">
-						<div class="overlay">
-							<div class="industry">Industry | Consumer Goods</div>
-							<div class="title">Crayola</div>
-							<a href="#" class="link">View Project</a>
-						</div>
-					</div>
-				</article>
-				<article class="inside">
-					<div class="mask">
-							<div class="overlay">
-								<div class="industry">Industry | Entertainment</div>
-								<div class="title">Inside Nightclub</div>
-								<a href="#" class="link">View Project</a>
-							</div>
-						</div>
-					</article>
-				<article class="crayola"></article>
-				<article class="inside"></article>
-				<article class="crayola"></article>
-				<article class="inside"></article>
-				<article class="crayola"></article>
-				<article class="inside"></article>
-				<article class="crayola"></article>
-			</div>
-		</section>
-	</div>
-	<footer class="fixed-bottom">
-		&copy; 2019 Brian M Low. All Rights Reserved.
-	</footer>
-	<script src="scripts/jquery-3.3.1.slim.min.js"></script>
-	<script>
-		var deepThoughts = [
-			"If I ever opened a trampoline store, I don't think I'd call it Trampo-Land, because you might think it was a store for tramps, which is not the impression we are trying to convey with our store. On the other hand, we would not prohibit tramps from browsing, or testing the trampolines, unless a tramp's gyrations seemed to be getting out of control.",
-			"If you're ever stuck in some thick undergrowth in your underwear, don't stop and think of what other words have 'under' in them, because that's probably the first sign of jungle madness.",
-			"It makes me mad when people say I turned and ran like a scared rabbit. Maybe it was like an angry rabbit, who was running to go fight in another fight, away from the first fight.",
-			"The memories of my family outings are still a source of strength to me. I remember we'd all pile into the car - I forget what kind it was - and drive and drive. I'm not sure where we'd go, but I think there were some trees there. The smell of something was strong in the air as we played whatever sport we played. I remember a bigger, older guy we called 'Dad'. We'd eat some stuff, or not, and then I think we went home. I guess some things never leave you."
-		];
-		function randomDeepThought() {
-			var rnd = Math.floor(Math.random() * deepThoughts.length);
-			$('#tagline p').text(deepThoughts[rnd]);
-		}
-		$(function() {
-			randomDeepThought();
-			$('#menu-toggle').click(function() {
-				$(this).toggleClass('open');
-				$('#slideout-menu').toggleClass('open');
-			});
-		});
-	</script>
+  <header>
+    <a href="index.html">
+      <img src="assets/bml-logo.png">
+    </a>
+    <img id="menu-toggle" src="assets/menu-toggle.svg" />
+  </header>
+  <div id="main">
+    <section id="slideout-menu">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about me</a></li>
+            <li><a href="#">my work</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="slideshow">
+      <div class="slide">
+        <img src="assets/slideshow/urbantilt.png" />
+        <div class="overlay">
+          <div class="industry">Industry | Photography</div>
+          <div class="title">UrbanTilt</div>
+          <a href="#" class="link">View Project</a>
+        </div>
+      </div>
+    </section>
+    <section id="tagline">
+      <header>Deep Thoughts &trade;</header>
+      <p>
+        <!-- random  content here -->
+      </p>
+    </section>
+    <section id="featured-projects">
+      <header>Featured Projects</header>
+      <div class="container">
+        <article class="inside">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Legal</div>
+              <div class="title offscreen-left">Bennet Jones LLP</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="crayola">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Consumer Goods</div>
+              <div class="title offscreen-left">Crayola</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="inside">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Architecture</div>
+              <div class="title offscreen-left">HOK</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="crayola">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Food &amp; Beverage</div>
+              <div class="title offscreen-left">Tutu Garden</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="inside">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Motorcycles</div>
+              <div class="title offscreen-left">Kawasaki</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="crayola">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Medical</div>
+              <div class="title offscreen-left">Spectral Diagnostics</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="inside">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Photography</div>
+              <div class="title offscreen-left">Vanessa Galle</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="crayola">
+          <div class="mask">
+            <div class="overlay">
+                <div class="industry offscreen-left">Industry | Legal</div>
+                <div class="title offscreen-left">Gowlings LLP</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+        <article class="inside">
+          <div class="mask">
+            <div class="overlay">
+              <div class="industry offscreen-left">Industry | Entertainment</div>
+              <div class="title offscreen-left">Inside Nightclub</div>
+              <a href="#" class="link offscreen-left">View Project</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+  <footer class="fixed-bottom">
+    &copy; 2019 Brian M Low. All Rights Reserved.
+  </footer>
+  <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+  <script>
+    var deepThoughts = [
+      "If I ever opened a trampoline store, I don't think I'd call it Trampo-Land, because you might think it was a store for tramps, which is not the impression we are trying to convey with our store. On the other hand, we would not prohibit tramps from browsing, or testing the trampolines, unless a tramp's gyrations seemed to be getting out of control.",
+      "If you're ever stuck in some thick undergrowth in your underwear, don't stop and think of what other words have 'under' in them, because that's probably the first sign of jungle madness.",
+      "It makes me mad when people say I turned and ran like a scared rabbit. Maybe it was like an angry rabbit, who was running to go fight in another fight, away from the first fight.",
+      "The memories of my family outings are still a source of strength to me. I remember we'd all pile into the car - I forget what kind it was - and drive and drive. I'm not sure where we'd go, but I think there were some trees there. The smell of something was strong in the air as we played whatever sport we played. I remember a bigger, older guy we called 'Dad'. We'd eat some stuff, or not, and then I think we went home. I guess some things never leave you."
+    ];
+    function randomDeepThought() {
+      var rnd = Math.floor(Math.random() * deepThoughts.length);
+      $('#tagline p').text(deepThoughts[rnd]);
+    }
+    $(function () {
+      randomDeepThought();
+      $('#menu-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('#slideout-menu').toggleClass('open');
+      });
+    });
+  </script>
 </body>
+
 </html>

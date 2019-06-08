@@ -126,6 +126,10 @@ footer {
   font-size: 1.5rem;
   text-decoration: none;  
 }
+#slideshow .overlay .link:hover:after {
+  content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
+  display: inline;
+}
 
 #tagline {
   position: relative;
@@ -184,7 +188,7 @@ footer {
   background-size: cover; /* for the background image below */
 }
 #featured-projects article.crayola {
-  background-image: url('../assets/featured-projects/crayola.png');
+  background-image: url('../assets/featured-projects/crayola.png'); /* can use a different image for mobile */
 }
 #featured-projects article.inside {
   background-image: url('../assets/featured-projects/inside.png');
@@ -199,7 +203,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 0; /* hidden until hover */
   background-color: #000;
   z-index: 1;
   transition: opacity 0.25s ease;
@@ -213,13 +217,13 @@ footer {
   left: 1rem;
   width: 100%;
   height: 100%;
-  z-index: 2;
   color: #fff;
-  opacity: 0;
-  transition: opacity 2s ease;
+  z-index: 9; /* above the mask */
 }
-#featured-projects .mask:hover .overlay {
-  opacity: 1;
+.offscreen-left {
+  position: relative;
+  left: -100vw;
+  transition: all .5s ease-in-out;
 }
 #featured-projects .industry {
   font-size: 1.5rem;
@@ -231,9 +235,19 @@ footer {
   padding-bottom: 1rem;
 }
 #featured-projects .link {
-  color: #fff;
+  color: #fff; /* same as industry and title */
   font-size: 1rem;
   text-decoration: none;
+}
+#featured-projects .link:hover:after {
+  content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
+  display: inline;
+}
+
+#featured-projects .mask:hover .industry,
+#featured-projects .mask:hover .title,
+#featured-projects .mask:hover .link {
+  left: 0;
 }
 
 .hidden {
