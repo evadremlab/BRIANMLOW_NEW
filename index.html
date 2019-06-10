@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Brian M Low | Graphic Design</title>
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="css/site.css">
   <style>
   </style>
@@ -31,14 +32,22 @@
       </div>
     </section>
     <section id="slideshow">
-      <div class="slide">
+      <figure class="slide active-slide">
         <img src="assets/slideshow/urbantilt.png" />
-        <div class="overlay">
+        <figcaption class="overlay">
           <div class="industry">Industry | Photography</div>
           <div class="title">UrbanTilt</div>
           <a href="#" class="link">View Project</a>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="assets/slideshow/tutu.png" />
+        <figcaption class="overlay">
+          <div class="industry">Industry | Food &amp; Beverage</div>
+          <div class="title">Tutu Garden</div>
+          <a href="#" class="link">View Project</a>
+        </figcaption>
+      </figure>
     </section>
     <section id="tagline">
       <header>Deep Thoughts &trade;</header>
@@ -115,8 +124,8 @@
         <article class="crayola">
           <div class="mask">
             <div class="overlay">
-                <div class="industry offscreen-left">Industry | Legal</div>
-                <div class="title offscreen-left">Gowlings LLP</div>
+              <div class="industry offscreen-left">Industry | Legal</div>
+              <div class="title offscreen-left">Gowlings LLP</div>
               <a href="#" class="link offscreen-left">View Project</a>
             </div>
           </div>
@@ -137,6 +146,7 @@
     &copy; 2019 Brian M Low. All Rights Reserved.
   </footer>
   <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+  <script src="scripts/slideshow.js"></script>
   <script src="scripts/site.js"></script>
 </body>
 </html>

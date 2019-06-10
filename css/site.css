@@ -100,23 +100,20 @@ footer {
   background-color: #1d1d1d; /* lighter than #111 */
 }
 
-#slideshow .slide {
-  position: relative;
-}
-#slideshow img {
+.slide img {
   width: 100%; /* scale to fit window */
 }
-#slideshow .overlay {
+.slide .overlay {
   position: absolute;
   top: 3rem;
   left: 3rem;
   padding: 1rem;
   color: #111;
 }
-#slideshow .overlay .industry {
+.slide .overlay .industry {
   font-size: 2rem;
 }
-#slideshow .overlay .title {
+.slide .overlay .title {
   font-size: 4rem;
   line-height: 4rem;
   font-weight: bold;
@@ -125,11 +122,11 @@ footer {
   position: relative;
   left: -0.2rem;
 }
-#slideshow .overlay .link {
+.slide .overlay .link {
   font-size: 1.5rem;
   text-decoration: none;  
 }
-#slideshow .overlay .link:hover:after {
+.slide .overlay .link:hover:after {
   content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
   display: inline;
 }

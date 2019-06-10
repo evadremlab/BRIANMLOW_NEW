@@ -38,4 +38,10 @@ $(function () { // on page load
     $(this).toggleClass('open');
     $('#slideout-menu').toggleClass('open');
   });
+  makeSlideshow('#slideshow', {
+    auto: { // auto-advancing slides
+      speed: 600, // speed to advance slides at in seconds
+      pauseOnHover: true // pause advancing on mouseover?
+    }
+  });
 });
