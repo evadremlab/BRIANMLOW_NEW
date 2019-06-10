@@ -100,6 +100,13 @@ footer {
   background-color: #1d1d1d; /* lighter than #111 */
 }
 
+/* applies to slides and featured projects */
+.overlay .industry, .overlay .title, .overlay .link {
+  position: relative;
+  left: -100vw;
+  transition: all .5s ease-in-out;
+}
+
 .slide img {
   width: 100%; /* scale to fit window */
 }
@@ -108,22 +115,42 @@ footer {
   top: 3rem;
   left: 3rem;
   padding: 1rem;
+}
+.slide.light-text .overlay {
+  color: #fff;
+}
+.slide.dark-text .overlay {
   color: #111;
 }
+.slide .overlay {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  padding: 1rem;
+  color: #111;
+}
+.slide.active-slide .overlay .industry,
+.slide.active-slide .overlay .title,
+.slide.active-slide .overlay .link {
+  left: 0;
+}
+
 .slide .overlay .industry {
   font-size: 2rem;
 }
 .slide .overlay .title {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 7rem;
+  line-height: 9rem;
   font-weight: bold;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  /* interferes with offscreen left */
   /* pull it into line with the industry and link */
-  position: relative;
-  left: -0.2rem;
+  /* position: relative; */
+  /* left: -0.2rem; */
 }
 .slide .overlay .link {
   font-size: 1.5rem;
+  line-height: 2rem;
   text-decoration: none;  
 }
 .slide .overlay .link:hover:after {
@@ -219,11 +246,6 @@ footer {
   height: 100%;
   color: #fff;
   z-index: 9; /* above the mask */
-}
-.offscreen-left {
-  position: relative;
-  left: -100vw;
-  transition: all .5s ease-in-out;
 }
 #featured-projects .industry {
   font-size: 1.5rem;

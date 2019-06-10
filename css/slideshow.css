@@ -7,15 +7,15 @@
 #slideshow:focus {
   outline: 0;
 }
-#slideshow figure {
+#slideshow .slide {
   position: absolute;
   top: 0;
   width: 100%;
 }
-#slideshow figure:first-child {
+#slideshow .slide:first-child {
   position: relative;
 }
-#slideshow figure img {
+#slideshow .slide img {
   opacity: 0;
   -webkit-transition: opacity 1.2s;
   transition: opacity 1.2s;
