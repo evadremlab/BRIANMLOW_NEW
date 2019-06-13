@@ -10,7 +10,7 @@
     <img src="assets/slideshow/urbantilt.png" />
     <figcaption class="overlay">
       <div class="industry">Industry | Photography</div>
-      <div class="title">UrbanTilt</div>
+      <div class="title">urbantilt</div>
       <a href="urbantilt.php" class="link">View Project</a>
     </figcaption>
   </figure>
@@ -18,8 +18,8 @@
     <img src="assets/slideshow/tutu.png" />
     <figcaption class="overlay">
       <div class="industry">Industry | Food &amp; Beverage</div>
-      <div class="title">Tutu Garden</div>
-      <a href="#" class="link">View Project</a>
+      <div class="title">TUTU Garden</div>
+      <a href="tutu.php" class="link">View Project</a>
     </figcaption>
   </figure>
 </section>
@@ -65,8 +65,8 @@
       <div class="mask">
         <div class="overlay">
           <div class="industry">Industry | Food &amp; Beverage</div>
-          <div class="title">Tutu Garden</div>
-          <a href="#" class="link">View Project</a>
+          <div class="title">TUTU Garden</div>
+          <a href="tutu.php" class="link">View Project</a>
         </div>
       </div>
     </article>

@@ -15,14 +15,6 @@ footer {
   line-height: 3rem; /* vertically centered */
 }
 
-.fixed-bottom { /* from Bootstrap css */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-}
-
 #menu-toggle {
   position: absolute;
   top: 23px;
@@ -46,7 +38,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 5.75rem - 1.25rem); /* minus header and footer, so we don't get a vscrollbar */
+  height: calc(100vh - 5.75rem); /* minus header, so we don't get a vscrollbar */
   overflow: hidden;
 }
 #slideout-menu nav {
@@ -109,12 +101,6 @@ footer {
 
 .slide img {
   width: 100%; /* scale to fit window */
-}
-.slide .overlay {
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-  padding: 1rem;
 }
 .slide.light-text .overlay {
   color: #fff;
@@ -269,9 +255,6 @@ footer {
   left: 0;
 }
 
-.project-overlay {
-  background: rgba(0,0,0,.45);
-}
 .project-overlay #slideshow {
   z-index: -1; /* so overlay is on top */
 }
@@ -314,6 +297,7 @@ footer {
 
 #project-artwork img {
   display: block;
+  width: 100%;
   max-width: 100%;
   padding-bottom: 1rem;
 }
@@ -322,7 +306,11 @@ footer {
   display: none;  
 }
 
-/* bootstrap overrides */
+img.darken {
+  filter: brightness(50%);
+}
+
+/* override Bootstrap */
 
 figure {
   margin-bottom: 0;

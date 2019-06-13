@@ -17,15 +17,15 @@
     <img id="menu-toggle" src="assets/menu-toggle.svg" />
   </header>
   <div id="slideout-menu">
-      <div class="container">
-        <nav>
-          <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">my work</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about me</a></li>
+          <li><a href="#">my work</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
     </div>
-  <div id="main">
+  </div>
+  <main id="content" role="main">
