@@ -103,7 +103,7 @@ footer {
 /* applies to slides and featured projects */
 .overlay .industry, .overlay .title, .overlay .link {
   position: relative;
-  left: -100vw;
+  left: -100vw; /* offscreen to the left */
   transition: all .5s ease-in-out;
 }
 
@@ -140,28 +140,25 @@ footer {
 }
 .slide .overlay .title {
   font-size: 7rem;
-  line-height: 9rem;
+  line-height: 10rem;
   font-weight: bold;
-  padding-top: 2rem;
-  /* interferes with offscreen left */
-  /* pull it into line with the industry and link */
-  /* position: relative; */
-  /* left: -0.2rem; */
+  margin-left: -4px; /* align with title */
 }
 .slide .overlay .link {
   font-size: 1.5rem;
   line-height: 2rem;
-  text-decoration: none;  
+  text-decoration: none;
 }
 .slide .overlay .link:hover:after {
   content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
   display: inline;
 }
 
-#tagline {
+#site-tagline {
   position: relative;
 }
-#tagline header {
+#site-tagline header {
+  z-index: 2; /* above slideshow */
   display: inline-block;
   position: absolute;
   top: -1.75rem;
@@ -171,18 +168,18 @@ footer {
   font-weight: bold;
   padding: 0.5rem 1rem 0.5rem 5rem;
 }
-#tagline p {
+#site-tagline p {
   color: #666;
   font-size: 2rem;
   font-style: italic;
   line-height: 2.2rem;
   padding: 3rem 1rem;
 }
-#tagline p::before { /* left quotation mark */
+#site-tagline p::before { /* left quotation mark */
   content: "\201C"; /* https://css-tricks.com/snippets/html/glyphs */
   font-weight: bold;
 }
-#tagline p::after { /* right quotation mark */
+#site-tagline p::after { /* right quotation mark */
   content: "\201D";
   font-weight: bold;
 }
@@ -272,9 +269,66 @@ footer {
   left: 0;
 }
 
+.project-overlay {
+  background: rgba(0,0,0,.45);
+}
+.project-overlay #slideshow {
+  z-index: -1; /* so overlay is on top */
+}
+#project-tagline {
+  position: relative;
+}
+#project-tagline .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#project-tagline article {
+  flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
+  font-size: 1.5rem;
+}
+.project-description {
+  color: #fff;
+  background-color: #111;
+  margin-top: -1rem; /* a bit higher than the project-components */
+  padding: 6rem;
+  font-style: italic;
+}
+.project-components {
+  padding: 4rem;
+}
+.project-components ul {
+  list-style: none;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+.project-components li:before {
+  content: "\2014\00a0\00a0\00a0\00a0"; /* mdash and 4 spaces */
+  color: silver;
+  font-weight: normal;
+}
+.project-components li:nth-child(even) {
+  color: gray;
+}
+
+#project-artwork img {
+  display: block;
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
 .hidden {
   display: none;  
 }
+
+/* bootstrap overrides */
+
+figure {
+  margin-bottom: 0;
+}
+
+/* keyframe animations */
 
 @keyframes menuFadeIn {
   99% {

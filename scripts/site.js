@@ -7,7 +7,7 @@ var deepThoughts = [
 
 function displayRandomDeepThought() {
   var rnd = Math.floor(Math.random() * deepThoughts.length);
-  $('#tagline p').text(deepThoughts[rnd]);
+  $('#site-tagline p').text(deepThoughts[rnd]);
 }
 
 function debounce(func, wait, immediate) { // from https://davidwalsh.name/javascript-debounce-function
@@ -26,22 +26,23 @@ function debounce(func, wait, immediate) { // from https://davidwalsh.name/javas
 };
 
 var hideSlideoutMenu = debounce(function() {
-  $('#menu-toggle').removeClass('open');
-  $('#slideout-menu').removeClass('open');
+  $('#menu-toggle,#slideout-menu').removeClass('open');
 }, 250);
 
 $(function () { // on page load
-  displayRandomDeepThought();
+  if (typeof onPageLoad == 'function') { // may be defined on individual pages
+    onPageLoad();
+  }
+
+  setTimeout(function() { // fix weird flash of content below slideshow
+    $('.display-after-load').removeClass('hidden');
+  }, 10);
+
   $(window).scroll(hideSlideoutMenu);
   $(window).resize(hideSlideoutMenu);
+
   $('#menu-toggle').click(function () {
     $(this).toggleClass('open');
     $('#slideout-menu').toggleClass('open');
-  });
-  makeSlideshow('#slideshow', {
-    auto: { // auto-advancing slides
-      speed: 600, // speed to advance slides at in seconds
-      pauseOnHover: true // pause advancing on mouseover?
-    }
   });
 });
