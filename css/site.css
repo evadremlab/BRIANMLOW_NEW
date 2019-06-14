@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 body > header {
   display: flex;
   position: relative;
@@ -31,22 +34,16 @@ footer {
 
 #slideout-menu {
   position: relative;
-  background-color: cyan;
 }
 #slideout-menu .container { /* so we don't get an hscroll bar on the offscreen menu below  */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 5.75rem); /* minus header, so we don't get a vscrollbar */
   overflow: hidden;
 }
 #slideout-menu nav {
   position: absolute;
   top: 0;
   left: 100vw; /* offscreen to the right  */
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: calc(100vh - 5.75rem); /* minus header, so we don't get a vscrollbar */
   z-index: 999; /* above the page content */
   background-color: #111;
   transition-property: left;
@@ -190,36 +187,31 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-#featured-projects article {
+#featured-projects figure {
   position: relative; /* for positioning the mask and overlay */
-  height: 250px;
+  height: 350px;
   overflow: hidden;
   flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
-  background-size: cover; /* for the background image below */
 }
-#featured-projects article.crayola {
-  background-image: url('../assets/featured-projects/crayola.png'); /* can use a different image for mobile */
-}
-#featured-projects article.inside {
-  background-image: url('../assets/featured-projects/inside.png');
-}
-#featured-projects article:nth-child(1) { /* first project */
+#featured-projects figure:nth-child(1) { /* first project */
   flex: 1 0 35%;
 }
-#featured-projects article:nth-last-child() { /* last project */
+#featured-projects figure:nth-last-child() { /* last project */
   flex: 1 0 35%;
 }
-#featured-projects .mask {
-  position: absolute;
+#featured-projects .lazy {
+  height: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+#featured-projects figure a {
+  display: block;
   width: 100%;
   height: 100%;
-  opacity: 0; /* hidden until hover */
-  background-color: #000;
-  z-index: 1;
-  transition: opacity 0.25s ease;
 }
-#featured-projects .mask:hover {
-  opacity: 0.7;
+#featured-projects figure:hover .lazy {
+  filter: brightness(50%);
 }
 #featured-projects .overlay {
   position: absolute;
@@ -228,14 +220,14 @@ footer {
   width: 100%;
   height: 100%;
   color: #fff;
-  z-index: 9; /* above the mask */
+  z-index: 999;
 }
 #featured-projects .industry {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 #featured-projects .title {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -249,9 +241,9 @@ footer {
   display: inline;
 }
 
-#featured-projects .mask:hover .industry,
-#featured-projects .mask:hover .title,
-#featured-projects .mask:hover .link {
+#featured-projects figure:hover .industry,
+#featured-projects figure:hover .title,
+#featured-projects figure:hover .link {
   left: 0;
 }
 
@@ -272,9 +264,10 @@ footer {
 .project-description {
   color: #fff;
   background-color: #111;
-  margin-top: -1rem; /* a bit higher than the project-components */
-  padding: 6rem;
+  margin-top: -2rem; /* a bit higher than the project-components */
+  padding: 4rem 6rem 6rem 6rem;
   font-style: italic;
+  z-index: 2; /* over the hero image */
 }
 .project-components {
   padding: 4rem;
@@ -302,6 +295,30 @@ footer {
   padding-bottom: 1rem;
 }
 
+nav.next-prev-project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+nav.next-prev-project li {
+  list-style: none;
+  flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
+}
+nav.next-prev-project li:nth-child(1) {
+  padding-left: 10rem;
+}
+nav.next-prev-project li:nth-child(2) {
+  text-align: right;
+  padding-right: 10rem;
+}
+nav.next-prev-project header {
+  color: silver;
+}
+nav.next-prev-project a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 .hidden {
   display: none;  
 }
@@ -310,6 +327,22 @@ img.darken {
   filter: brightness(50%);
 }
 
+.under-construction {
+  width: 100%;
+  height: 74vh; /* use available space, but keep room for next-prev-project */
+  color: gold;
+  background-color: navy;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+}
+.under-construction:after {
+  content: " is under construction";
+  display: block;
+  font-size: 3rem;
+  font-weight: normal;
+}
 /* override Bootstrap */
 
 figure {

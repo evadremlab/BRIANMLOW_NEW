@@ -30,6 +30,8 @@ var hideSlideoutMenu = debounce(function() {
 }, 250);
 
 $(function () { // on page load
+  $('.lazy').Lazy(); // lazy load images
+
   if (typeof onPageLoad == 'function') { // may be defined on individual pages
     onPageLoad();
   }

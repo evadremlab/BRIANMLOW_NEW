@@ -15,7 +15,7 @@
     </figcaption>
   </figure>
   <figure class="slide light-text">
-    <img src="assets/slideshow/tutu.png" />
+    <img class="lazy" data-src="assets/slideshow/tutu.png" />
     <figcaption class="overlay">
       <div class="industry">Industry | Food &amp; Beverage</div>
       <div class="title">TUTU Garden</div>
@@ -34,87 +34,95 @@
 <section id="featured-projects" class="hidden display-after-load">
   <header>Featured Projects</header>
   <div class="container">
-    <article class="inside">
-      <div class="mask">
-        <div class="overlay">
+    <figure>
+      <a href="bennett.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/bennett.png');"></div>
+        <figcaption class="overlay">
           <div class="industry">Industry | Legal</div>
-          <div class="title">Bennet Jones LLP</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="crayola">
-      <div class="mask">
-        <div class="overlay">
+          <div class="title">Bennett Jones LLP</div>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="crayola.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/crayola.png');"></div>
+        <figcaption class="overlay">
           <div class="industry">Industry | Consumer Goods</div>
           <div class="title">Crayola</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="inside">
-      <div class="mask">
-        <div class="overlay">
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="hok.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/hok.png');"></div>
+        <figcaption class="overlay">
           <div class="industry">Industry | Architecture</div>
           <div class="title">HOK</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="crayola">
-      <div class="mask">
-        <div class="overlay">
-          <div class="industry">Industry | Food &amp; Beverage</div>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="tutu.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/tutu.png');"></div>
+        <figcaption class="overlay">
+          <div class="industry">Industry | food &amp; Beverage</div>
           <div class="title">TUTU Garden</div>
-          <a href="tutu.php" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="inside">
-      <div class="mask">
-        <div class="overlay">
-          <div class="industry">Industry | Motorcycles</div>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="kawasaki.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/kawasaki.png');"></div>        <figcaption class="overlay">
+        <div class="industry">Industry | Motorcycles</div>
           <div class="title">Kawasaki</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="crayola">
-      <div class="mask">
-        <div class="overlay">
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="spectral.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/spectral.png');"></div>
+        <figcaption class="overlay">
           <div class="industry">Industry | Medical</div>
           <div class="title">Spectral Diagnostics</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="inside">
-      <div class="mask">
-        <div class="overlay">
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="galle.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/galle.png');"></div>
+        <figcaption class="overlay">
           <div class="industry">Industry | Photography</div>
           <div class="title">Vanessa Galle</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="crayola">
-      <div class="mask">
-        <div class="overlay">
-          <div class="industry">Industry | Legal</div>
-          <div class="title">Gowlings LLP</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
-    <article class="inside">
-      <div class="mask">
-        <div class="overlay">
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="brose.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/brose.png');"></div>
+        <figcaption class="overlay">
+          <div class="industry">Industry | Fashion</div>
+          <div class="title">Brose</div>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="inside.php">
+        <div class="lazy" style="background-image:url('assets/featured-projects/inside.png');"></div>
+        <figcaption class="overlay">
           <div class="industry">Industry | Entertainment</div>
-          <div class="title">Inside Nightclub</div>
-          <a href="#" class="link">View Project</a>
-        </div>
-      </div>
-    </article>
+          <div class="title">inside nightclub</div>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
   </div>
 </section>
 
@@ -124,7 +132,7 @@
 
     makeSlideshow('#slideshow', {
       auto: { // auto-advancing slides
-        speed: 600, // speed to advance slides at in seconds
+        speed: 10, // speed to advance slides at in seconds
         pauseOnHover: true // pause advancing on mouseover?
       }
     });

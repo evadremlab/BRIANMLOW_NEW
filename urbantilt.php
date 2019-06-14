@@ -1,11 +1,13 @@
 <?php
 	$title = "urbantilt";
+  $prev_project = "Spectral Diagnostics|spectral";
+  $next_project = "Bombardier";
 	include "templates/header.php";
 ?>
 
 <section id="slideshow"
   <figure class="slide active-slide dark-text">
-    <img src="assets/slideshow/urbantilt.png" class="darken" />
+    <img src="assets/urbantilt_hero.png" class="darken" />
     <figcaption class="overlay">
       <div class="industry">Industry | Photography</div>
       <div class="title">urbantilt</div>
@@ -32,19 +34,14 @@
 </section>
 
 <section id="project-artwork">
-  <img src="assets/empty.gif" data-src="assets/urbantilt_1.png">
-  <img src="assets/empty.gif" data-src="assets/urbantilt_2.png">
-  <img src="assets/empty.gif" data-src="assets/urbantilt_3.png">
-  <img src="assets/empty.gif" data-src="assets/urbantilt_4.png">
-  <img src="assets/empty.gif" data-src="assets/urbantilt_5.png">
+  <img class="lazy" data-src="assets/urbantilt_1.png">
+  <img class="lazy" data-src="assets/urbantilt_2.png">
+  <img class="lazy" data-src="assets/urbantilt_3.png">
+  <img class="lazy" data-src="assets/urbantilt_4.png">
+  <img class="lazy" data-src="assets/urbantilt_5.png">
 </section>
 
-<script>
-  function onPageLoad() {
-    $('#project-artwork img').unveil(); // lazy load images
-  }
-</script>
-
 <?php
+  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

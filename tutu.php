@@ -1,11 +1,13 @@
 <?php
 	$title = "TUTU Garden";
+  $prev_project = "Brose";
+  $next_project = "Bennett Jones LLP|bennett";
 	include "templates/header.php";
 ?>
 
 <section id="slideshow">
   <figure class="slide active-slide light-text">
-    <img src="assets/slideshow/tutu.png" class="darken" />
+    <img src="assets/tutu_hero.png" class="darken" />
     <figcaption class="overlay">
       <div class="industry">Industry | Food &amp; Beverage</div>
       <div class="title">TUTU Garden</div>
@@ -35,21 +37,16 @@
 </section>
 
 <section id="project-artwork">
-  <img src="assets/blank.gif" data-src="assets/tutu_1.png">
-  <img src="assets/blank.gif" data-src="assets/tutu_2.png">
-  <img src="assets/blank.gif" data-src="assets/tutu_4.png">
-  <img src="assets/blank.gif" data-src="assets/tutu_3.png">
-  <img src="assets/blank.gif" data-src="assets/tutu_5.png">
-  <img src="assets/blank.gif" data-src="assets/tutu_7.png">
-  <img src="assets/blank.gif" data-src="assets/tutu_8.png">
+  <img class="lazy" data-src="assets/tutu_1.png">
+  <img class="lazy" data-src="assets/tutu_2.png">
+  <img class="lazy" data-src="assets/tutu_4.png">
+  <img class="lazy" data-src="assets/tutu_3.png">
+  <img class="lazy" data-src="assets/tutu_5.png">
+  <img class="lazy" data-src="assets/tutu_7.png">
+  <img class="lazy" data-src="assets/tutu_8.png">
 </section>
 
-<script>
-  function onPageLoad() {
-    $('#project-artwork img').unveil(); // lazy load images
-  }
-</script>
-
 <?php
+  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>
