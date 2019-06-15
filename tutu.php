@@ -1,5 +1,6 @@
 <?php
-	$title = "TUTU Garden";
+  $title = "TUTU Garden";
+  $industry = "Food &amp; Beverage";
   $prev_project = "Brose";
   $next_project = "Bennett Jones LLP|bennett";
 	include "templates/header.php";
@@ -7,10 +8,10 @@
 
 <section id="slideshow">
   <figure class="slide active-slide light-text">
-    <img src="assets/tutu_hero.png" class="darken" />
+    <img src="assets/tutu/tutu_hero.png" class="darken" />
     <figcaption class="overlay">
-      <div class="industry">Industry | Food &amp; Beverage</div>
-      <div class="title">TUTU Garden</div>
+      <div class="industry">Industry | <?php echo $industry; ?></div>
+      <div class="title"><?php echo $title; ?></div>
     </figcaption>
   </figure>
 </section>
@@ -37,13 +38,13 @@
 </section>
 
 <section id="project-artwork">
-  <img class="lazy" data-src="assets/tutu_1.png">
-  <img class="lazy" data-src="assets/tutu_2.png">
-  <img class="lazy" data-src="assets/tutu_4.png">
-  <img class="lazy" data-src="assets/tutu_3.png">
-  <img class="lazy" data-src="assets/tutu_5.png">
-  <img class="lazy" data-src="assets/tutu_7.png">
-  <img class="lazy" data-src="assets/tutu_8.png">
+  <img class="lazy" data-src="assets/tutu/tutu_1.png">
+  <img class="lazy" data-src="assets/tutu/tutu_2.png">
+  <img class="lazy" data-src="assets/tutu/tutu_4.png">
+  <img class="lazy" data-src="assets/tutu/tutu_3.png">
+  <img class="lazy" data-src="assets/tutu/tutu_5.png">
+  <img class="lazy" data-src="assets/tutu/tutu_7.png">
+  <img class="lazy" data-src="assets/tutu/tutu_8.png">
 </section>
 
 <?php

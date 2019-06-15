@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; /* HACK: hide offscreen slideout menu */
 }
 body > header {
   display: flex;
@@ -17,6 +17,24 @@ footer {
   height: 3rem;
   line-height: 3rem; /* vertically centered */
 }
+
+section {
+  position: relative;
+}
+section header {
+  display: block;
+  position: absolute;
+  color: #fff;
+  background-color: #000;
+  width: 15rem;
+  font-size: 1.25rem;
+  text-align: right;
+  padding-right: 1rem;
+  top: -1rem;
+  z-index: 2; /* over other page content */
+}
+
+/* SLIDEOUT MENU AND TOGGLE */
 
 #menu-toggle {
   position: absolute;
@@ -61,7 +79,7 @@ footer {
   visibility: hidden;
   color: #999;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 600;
   padding-left: 1rem;
 }
 #slideout-menu li a {
@@ -96,6 +114,8 @@ footer {
   transition: all .5s ease-in-out;
 }
 
+/* SLIDESHOW */
+
 .slide img {
   width: 100%; /* scale to fit window */
 }
@@ -117,14 +137,13 @@ footer {
 .slide.active-slide .overlay .link {
   left: 0;
 }
-
 .slide .overlay .industry {
   font-size: 2rem;
 }
 .slide .overlay .title {
   font-size: 7rem;
   line-height: 10rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-left: -4px; /* align with title */
 }
 .slide .overlay .link {
@@ -132,10 +151,12 @@ footer {
   line-height: 2rem;
   text-decoration: none;
 }
-.slide .overlay .link:hover:after {
+.slide .overlay .link:hover::after {
   content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
   display: inline;
 }
+
+/* SITE TAGLINE */
 
 #site-tagline {
   position: relative;
@@ -148,7 +169,7 @@ footer {
   color: #fff;
   background-color: #111;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0.5rem 1rem 0.5rem 5rem;
 }
 #site-tagline p {
@@ -160,14 +181,14 @@ footer {
 }
 #site-tagline p::before { /* left quotation mark */
   content: "\201C"; /* https://css-tricks.com/snippets/html/glyphs */
-  font-weight: bold;
+  font-weight: 600;
 }
 #site-tagline p::after { /* right quotation mark */
   content: "\201D";
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout */
+/* FEATURED PROJECTS */
 
 #featured-projects {
   position: relative; /* so we can position header*/
@@ -179,7 +200,7 @@ footer {
   color: #fff;
   background-color: #111;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0.5rem 1rem 0.5rem 5rem;
   z-index: 1; /* so it appears over container */
 }
@@ -228,7 +249,7 @@ footer {
 #featured-projects .title {
   font-size: 2rem;
   line-height: 2rem;
-  font-weight: bold;
+  font-weight: 600;
   padding-bottom: 1rem;
 }
 #featured-projects .link {
@@ -236,16 +257,17 @@ footer {
   font-size: 1rem;
   text-decoration: none;
 }
-#featured-projects .link:hover:after {
+#featured-projects .link:hover::after {
   content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
   display: inline;
 }
-
 #featured-projects figure:hover .industry,
 #featured-projects figure:hover .title,
 #featured-projects figure:hover .link {
   left: 0;
 }
+
+/* PROJECT PAGE */
 
 .project-overlay #slideshow {
   z-index: -1; /* so overlay is on top */
@@ -277,9 +299,9 @@ footer {
   padding-left: 1rem;
   font-size: 1.25rem;
   letter-spacing: -1px;
-  font-weight: bold;
+  font-weight: 600;
 }
-.project-components li:before {
+.project-components li::before {
   content: "\2014\00a0\00a0\00a0\00a0"; /* mdash and 4 spaces */
   color: silver;
   font-weight: normal;
@@ -319,6 +341,78 @@ nav.next-prev-project a {
   text-transform: uppercase;
 }
 
+/* ABOUT PAGE */
+
+li.my-goal {
+  font-weight: normal;
+  padding-left: 2.25rem;
+}
+li.my-goal::before {
+  content: " ";
+  display: block;
+}
+
+#skills {
+  margin-top: 4rem;
+  padding: 1rem 0;
+  color: #fff;
+  background-color: #000;
+}
+#skills .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills dl {
+  flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
+  padding: 0 7rem;
+}
+#skills dt {
+  font-size: 1.9rem;
+  font-weight: 200;
+  padding: 1rem 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#skills dt::before {
+  content: "\2014"; /* mdash */
+  display: inline-block;
+  width: 3rem;
+  color: #00ffff;
+  font-weight: 200;
+}
+#skills .item-container {
+  margin-left: 3rem; /* align with dt::before */
+}
+#skills dd {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 600;
+  display: inline-block;
+}
+#skills dd::after {
+  content: "\00a0/";
+  display: inline-block;
+  color: #00ffff;
+}
+#skills dd:last-child::after {
+  content: " ";
+}
+
+#clients .flex-container {
+  padding: 0 6rem;
+}
+#clients img { /* 6 per row */
+  max-width: calc(100% / 6);
+  flex: 0 0 calc(100% / 6); /* flex-grow, flex-shrink, flex-basis */
+}
+
+#skills header, #clients header {
+  color: #fff;
+  background-color: #00ffff;
+}
+
+/* HELPER CLASSES */
+
 .hidden {
   display: none;  
 }
@@ -327,29 +421,35 @@ img.darken {
   filter: brightness(50%);
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .under-construction {
   width: 100%;
   height: 74vh; /* use available space, but keep room for next-prev-project */
   color: gold;
   background-color: navy;
   font-size: 6rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   padding: 2rem 0 4rem 0;
 }
-.under-construction:after {
+.under-construction::after {
   content: " is under construction";
   display: block;
   font-size: 3rem;
   font-weight: normal;
 }
-/* override Bootstrap */
+
+/* BOOTSTRAP OVERRIDE */
 
 figure {
   margin-bottom: 0;
 }
 
-/* keyframe animations */
+/* KEYFRAME ANIMATIONS */
 
 @keyframes menuFadeIn {
   99% {

@@ -7,7 +7,7 @@
 
 <section id="slideshow">
   <figure class="slide active-slide dark-text">
-    <img src="assets/slideshow/urbantilt.png" />
+    <img src="assets/urbantilt/urbantilt_hero.png" />
     <figcaption class="overlay">
       <div class="industry">Industry | Photography</div>
       <div class="title">urbantilt</div>
@@ -15,7 +15,7 @@
     </figcaption>
   </figure>
   <figure class="slide light-text">
-    <img class="lazy" data-src="assets/slideshow/tutu.png" />
+    <img class="lazy" data-src="assets/tutu/tutu_hero.png" />
     <figcaption class="overlay">
       <div class="industry">Industry | Food &amp; Beverage</div>
       <div class="title">TUTU Garden</div>
@@ -36,7 +36,7 @@
   <div class="container">
     <figure>
       <a href="bennett.php">
-        <div class="lazy" data-src="assets/featured-projects/bennett.png"></div>
+        <div class="lazy" data-src="assets/bennett/featured_bennett.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | Legal</div>
           <div class="title">Bennett Jones LLP</div>
@@ -46,7 +46,7 @@
     </figure>
     <figure>
       <a href="crayola.php">
-        <div class="lazy" data-src="assets/featured-projects/crayola.png"></div>
+        <div class="lazy" data-src="assets/crayola/featured_crayola.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | Consumer Goods</div>
           <div class="title">Crayola</div>
@@ -56,7 +56,7 @@
     </figure>
     <figure>
       <a href="hok.php">
-        <div class="lazy" data-src="assets/featured-projects/hok.png"></div>
+        <div class="lazy" data-src="assets/hok/featured_hok.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | Architecture</div>
           <div class="title">HOK</div>
@@ -66,7 +66,7 @@
     </figure>
     <figure>
       <a href="tutu.php">
-        <div class="lazy" data-src="assets/featured-projects/tutu.png"></div>
+        <div class="lazy" data-src="assets/tutu/featured_tutu.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | food &amp; Beverage</div>
           <div class="title">TUTU Garden</div>
@@ -76,8 +76,9 @@
     </figure>
     <figure>
       <a href="kawasaki.php">
-        <div class="lazy" data-src="assets/featured-projects/kawasaki.png"></div>        <figcaption class="overlay">
-        <div class="industry">Industry | Motorcycles</div>
+        <div class="lazy" data-src="assets/kawasaki/featured_kawasaki.png"></div>
+        <figcaption class="overlay">
+          <div class="industry">Industry | Motorcycles</div>
           <div class="title">Kawasaki</div>
           <div class="link">View Project</div>
         </figcaption>
@@ -85,7 +86,7 @@
     </figure>
     <figure>
       <a href="spectral.php">
-        <div class="lazy" data-src="assets/featured-projects/spectral.png"></div>
+        <div class="lazy" data-src="assets/spectral/featured_spectral.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | Medical</div>
           <div class="title">Spectral Diagnostics</div>
@@ -95,7 +96,7 @@
     </figure>
     <figure>
       <a href="galle.php">
-        <div class="lazy" data-src="assets/featured-projects/galle.png"></div>
+        <div class="lazy" data-src="assets/galle/featured_galle.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | Photography</div>
           <div class="title">Vanessa Galle</div>
@@ -105,7 +106,7 @@
     </figure>
     <figure>
       <a href="brose.php">
-        <div class="lazy" data-src="assets/featured-projects/brose.png"></div>
+        <div class="lazy" data-src="assets/brose/featured_brose.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | Fashion</div>
           <div class="title">Brose</div>
@@ -115,7 +116,7 @@
     </figure>
     <figure>
       <a href="inside.php">
-        <div class="lazy" data-src="assets/featured-projects/inside.png"></div>
+        <div class="lazy" data-src="assets/inside/featured_inside.png"></div>
         <figcaption class="overlay">
           <div class="industry">Industry | Entertainment</div>
           <div class="title">inside nightclub</div>

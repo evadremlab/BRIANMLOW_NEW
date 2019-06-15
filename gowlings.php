@@ -1,11 +1,55 @@
 <?php
-	$title = "Gowlings LLP";
+  $title = "Gowlings LLP";
+  $industry = "Legal";
   $prev_project = "Bombardier";
   $next_project = "Various";
 	include "templates/header.php";
 ?>
 
-<h1 class="under-construction">Gowlings LLP</h1>
+<section id="slideshow"
+  <figure class="slide active-slide light-text">
+    <img src="assets/gowlings/gowlings_hero.png" class="darken" />
+    <figcaption class="overlay">
+      <div class="industry">Industry | <?php echo $industry; ?></div>
+      <div class="title"><?php echo $title; ?></div>
+    </figcaption>
+  </figure>
+</section>
+
+<section id="project-tagline" class="hidden display-after-load">
+  <div class="container">
+    <article class="project-description">
+      While at Gowlings, I was responsible for the concept and design of project documents, 
+      proposal pitches, tradeshow materials, advertising and digital marketing assets. 
+      I was the lead in-house designer during an extensive rebrand of the firm and worked 
+      with an outside agency to ensure all materials adhered to the new brand standards. 
+      Once approved, it was my responsibility to create all of the pieces the firm required, 
+      from mailing labels, stationary, powerpoint templates, etc.
+    </article>
+    <article class="project-components">
+      <p>Project Components:</p>
+      <ul>
+        <li>Art &amp; Creative Direction</li>
+        <li>Branding &amp; Graphic Design</li>
+        <li>Print &amp; Digital Design</li>
+        <li>Advertising</li>
+        <li>Copywriting</li>
+        <li>Multilingual Marketing Materials</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="project-artwork">
+  <img class="lazy" data-src="assets/gowlings/gowlings_1.png">
+  <img class="lazy" data-src="assets/gowlings/gowlings_2.png">
+  <img class="lazy" data-src="assets/gowlings/gowlings_3.png">
+  <img class="lazy" data-src="assets/gowlings/gowlings_4.png">
+  <img class="lazy" data-src="assets/gowlings/gowlings_5.png">
+  <img class="lazy" data-src="assets/gowlings/gowlings_6.png">
+  <img class="lazy" data-src="assets/gowlings/gowlings_7.png">
+  <img class="lazy" data-src="assets/gowlings/gowlings_7-2.png">
+</section>
 
 <?php
   include "templates/next-prev-project.php";

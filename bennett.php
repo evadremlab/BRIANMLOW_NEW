@@ -1,5 +1,6 @@
 <?php
-	$title = "Bennett Jones LLP";
+  $title = "Bennett Jones LLP";
+  $industry = "Legal";
   $prev_project = "TUTU Garden|tutu";
   $next_project = "HOK";
   include "templates/header.php";
@@ -7,10 +8,10 @@
 
 <section id="slideshow"
   <figure class="slide active-slide light-text">
-    <img src="assets/bennett_hero.png" class="darken" />
+    <img src="assets/bennett/bennett_hero.png" class="darken" />
     <figcaption class="overlay">
-      <div class="industry">Industry | Legal</div>
-      <div class="title">Bennet Jones LLP</div>
+      <div class="industry">Industry | <?php echo $industry; ?></div>
+      <div class="title"><?php echo $title; ?></div>
     </figcaption>
   </figure>
 </section>
@@ -41,14 +42,14 @@
 </section>
 
 <section id="project-artwork">
-  <img class="lazy" data-src="assets/bennett_1.png">
-  <img class="lazy" data-src="assets/bennett_2.png">
+  <img class="lazy" data-src="assets/bennett/bennett_1.png">
+  <img class="lazy" data-src="assets/bennett/bennett_2.png">
   <div style="text-align:center">
     <iframe src="https://player.vimeo.com/video/143406001" width="800" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <img class="lazy" data-src="assets/bennett_4.png">
-  <img class="lazy" data-src="assets/bennett_4B.png">
-  <img class="lazy" data-src="assets/bennett_5.png">
+  <img class="lazy" data-src="assets/bennett/bennett_4.png">
+  <img class="lazy" data-src="assets/bennett/bennett_4B.png">
+  <img class="lazy" data-src="assets/bennett/bennett_5.png">
 </section>
 
 <?php

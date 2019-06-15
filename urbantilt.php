@@ -1,5 +1,6 @@
 <?php
-	$title = "urbantilt";
+  $title = "urbantilt";
+  $industry = "Photography";
   $prev_project = "Spectral Diagnostics|spectral";
   $next_project = "Bombardier";
 	include "templates/header.php";
@@ -7,10 +8,10 @@
 
 <section id="slideshow"
   <figure class="slide active-slide dark-text">
-    <img src="assets/urbantilt_hero.png" class="darken" />
+    <img src="assets/urbantilt/urbantilt_hero.png" class="darken" />
     <figcaption class="overlay">
-      <div class="industry">Industry | Photography</div>
-      <div class="title">urbantilt</div>
+      <div class="industry">Industry | <?php echo $industry; ?></div>
+      <div class="title"><?php echo $title; ?></div>
     </figcaption>
   </figure>
 </section>
@@ -34,11 +35,11 @@
 </section>
 
 <section id="project-artwork">
-  <img class="lazy" data-src="assets/urbantilt_1.png">
-  <img class="lazy" data-src="assets/urbantilt_2.png">
-  <img class="lazy" data-src="assets/urbantilt_3.png">
-  <img class="lazy" data-src="assets/urbantilt_4.png">
-  <img class="lazy" data-src="assets/urbantilt_5.png">
+  <img class="lazy" data-src="assets/urbantilt/urbantilt_1.png">
+  <img class="lazy" data-src="assets/urbantilt/urbantilt_2.png">
+  <img class="lazy" data-src="assets/urbantilt/urbantilt_3.png">
+  <img class="lazy" data-src="assets/urbantilt/urbantilt_4.png">
+  <img class="lazy" data-src="assets/urbantilt/urbantilt_5.png">
 </section>
 
 <?php
