@@ -15,6 +15,22 @@
     </figcaption>
   </figure>
   <figure class="slide light-text">
+    <img class="lazy" data-src="assets/brose/brose_hero.png" />
+    <figcaption class="overlay">
+      <h2 class="my-work">My Work</h2>
+      <h1 class="title">Brose</h1>
+      <a href="brose.php" class="link">View Project</a>
+    </figcaption>
+  </figure>
+  <figure class="slide dark-text">
+    <img class="lazy" data-src="assets/bennett/bennett_hero.png" />
+    <figcaption class="overlay">
+      <h2 class="my-work">My Work</h2>
+      <h1 class="title">Bennett Jones LLP</h1>
+      <a href="bennett.php" class="link">View Project</a>
+    </figcaption>
+  </figure>
+  <figure class="slide light-text">
     <img class="lazy" data-src="assets/tutu/tutu_hero.png" />
     <figcaption class="overlay">
       <h2 class="my-work">My Work</h2>
