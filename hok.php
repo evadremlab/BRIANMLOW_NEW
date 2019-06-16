@@ -1,6 +1,5 @@
 <?php
   $title = "HOK";
-  $industry = "Architecture";
   $prev_project = "Vanessa Galle|galle";
   $next_project = "TUTU Garden|tutu";
 	include "templates/header.php";
@@ -10,8 +9,8 @@
   <figure class="slide light-text">
     <div class="lazy darken" data-src="assets/hok/hok_hero.png"></div>
     <figcaption class="overlay">
-      <div class="industry">Industry | <?php echo $industry; ?></div>
-      <div class="title"><?php echo $title; ?></div>
+      <h2 class="industry">Industry | Architecture</h2>
+      <h1 class="title">HOK</h1>
     </figcaption>
   </figure>
 </section>

@@ -1,6 +1,5 @@
 <?php
   $title = "urbantilt";
-  $industry = "Photography";
   $prev_project = "Spectral Diagnostics|spectral";
   $next_project = "Bombardier";
 	include "templates/header.php";
@@ -10,8 +9,8 @@
   <figure class="slide dark-text">
     <div class="lazy darken" data-src="assets/urbantilt/urbantilt_hero.png"></div>
     <figcaption class="overlay">
-      <div class="industry">Industry | <?php echo $industry; ?></div>
-      <div class="title"><?php echo $title; ?></div>
+      <h2 class="industry">Industry | Photography</h2>
+      <h1 class="title">urbantilt</h1>
     </figcaption>
   </figure>
 </section>

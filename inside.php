@@ -1,6 +1,5 @@
 <?php
   $title = "inside nightclub";
-  $industry = "Entertainment";
   $prev_project = "Crayola";
   $next_project = "Vanessa Galle|galle";
 	include "templates/header.php";
@@ -10,8 +9,8 @@
   <figure class="slide light-text">
     <div class="lazy darken" data-src="assets/inside/inside_hero.png"></div>
     <figcaption class="overlay">
-      <div class="industry">Industry | <?php echo $industry; ?></div>
-      <div class="title"><?php echo $title; ?></div>
+      <h2 class="industry">Industry | Entertainment</h2>
+      <h1 class="title">inside nightclub</h1>
     </figcaption>
   </figure>
 </section>

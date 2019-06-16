@@ -106,11 +106,54 @@ section header {
   background-color: #1d1d1d; /* lighter than #111 */
 }
 
-/* applies to slides and featured projects */
+/* OVERLAY ON SLIDES AND FEATURED PROJECTS */
+
+.overlay {
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #111;
+}
+.light-text .overlay {
+  color: #fff;
+}
+.dark-text .overlay {
+  color: #111;
+}
 .overlay .industry, .overlay .title, .overlay .link {
   position: relative;
   left: -100vw; /* offscreen to the left */
   transition: all .5s ease-in-out;
+}
+.active-slide .overlay .industry,
+.active-slide .overlay .title,
+.active-slide .overlay .link {
+  left: 0;
+}
+.overlay .industry, .overlay .my-work {
+  font-size: 1em;
+  font-weight: 200;
+}
+.overlay .my-work {
+  text-transform: uppercase;
+}
+.overlay .title {
+  font-size: 3em;
+  line-height: 1em;
+}
+.overlay .link {
+  display: block;
+  margin-top: 4em;
+  font-size: .75em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.overlay .link:hover::after {
+  content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
+  display: inline;
 }
 
 /* SLIDESHOW */
@@ -126,42 +169,6 @@ section header {
 }
 #brose-page div.lazy {
   background-position: top center;
-}
-.slide.light-text .overlay {
-  color: #fff;
-}
-.slide.dark-text .overlay {
-  color: #111;
-}
-.slide .overlay {
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-  padding: 1rem;
-  color: #111;
-}
-.slide.active-slide .overlay .industry,
-.slide.active-slide .overlay .title,
-.slide.active-slide .overlay .link {
-  left: 0;
-}
-.slide .overlay .industry {
-  font-size: 2rem;
-}
-.slide .overlay .title {
-  font-size: 7rem;
-  line-height: 10rem;
-  font-weight: 600;
-  margin-left: -4px; /* align with title */
-}
-.slide .overlay .link {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-decoration: none;
-}
-.slide .overlay .link:hover::after {
-  content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
-  display: inline;
 }
 
 /* SITE TAGLINE */
@@ -190,9 +197,13 @@ section header {
 }
 #featured-projects figure {
   position: relative; /* for positioning the mask and overlay */
-  height: 350px;
   overflow: hidden;
+  height: 350px;
   flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
+}
+#my-work-page #featured-projects figure {
+  height: 600px;
+  flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
 }
 #featured-projects figure:nth-child(1) { /* first project */
   flex: 1 0 35%;
@@ -204,7 +215,7 @@ section header {
   height: inherit;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 #featured-projects figure a {
   display: block;
@@ -215,27 +226,20 @@ section header {
   filter: brightness(50%);
 }
 #featured-projects .overlay {
-  position: absolute;
   top: 1rem;
   left: 1rem;
-  width: 100%;
-  height: 100%;
   color: #fff;
-  z-index: 999;
-}
-#featured-projects .industry {
-  font-size: 1.25rem;
-}
-#featured-projects .title {
-  font-size: 2rem;
-  line-height: 2rem;
-  font-weight: 600;
-  padding-bottom: 1rem;
-}
-#featured-projects .link {
-  color: #fff; /* same as industry and title */
   font-size: 1rem;
-  text-decoration: none;
+}
+#my-work-page #featured-projects .overlay {
+  top: 5rem;
+  left: 3rem;
+  color: #fff;
+  font-size: 1rem;
+}
+#featured-projects .overlay .link {
+  margin-top: 2em;
+  color: #fff; /* same as industry and title */
 }
 #featured-projects .link:hover::after {
   content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */

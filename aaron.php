@@ -1,6 +1,5 @@
 <?php
   $title = "Aaron Schwartz";
-  $industry = "Legal";
   $prev_project = "Vanessa Galle|galle";
   $next_project = "Kawasaki";
 	include "templates/header.php";
@@ -10,8 +9,8 @@
   <figure class="slide light-text">
     <div class="lazy darken" data-src="assets/aaron/aaron_hero.png"></div>
     <figcaption class="overlay">
-      <div class="industry">Industry | <?php echo $industry; ?></div>
-      <div class="title"><?php echo $title; ?></div>
+      <h2 class="industry">Industry | Legal</h2>
+      <h1 class="title">Aaron Schwartz</h1>
     </figcaption>
   </figure>
 </section>

@@ -33,6 +33,4 @@
     </div>
   </div>
   <main id="<?php echo $page_name; ?>" role="main">
-  <?php
-    include "templates/next-prev-project.php";
-  ?>
+  

@@ -1,6 +1,5 @@
 <?php
   $title = "Sony Insider";
-  $industry = "Entertainment";
   $prev_project = "Stella &amp; Dot|stella";
   $next_project = "Spectral Diagnostics|spectral";
 	include "templates/header.php";
@@ -10,8 +9,8 @@
   <figure class="slide light-text">
     <div class="lazy darken" data-src="assets/sony/sony_hero.png"></div>
     <figcaption class="overlay">
-      <div class="industry">Industry | <?php echo $industry; ?></div>
-      <div class="title"><?php echo $title; ?></div>
+      <h2 class="industry">Industry | Entertainment</h2>
+      <h1 class="title">Sony Insider</h1>
     </figcaption>
   </figure>
 </section>

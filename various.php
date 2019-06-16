@@ -1,6 +1,5 @@
 <?php
   $title = "Various";
-  $industry = "Self Promotion";
   $prev_project = "Gowlings LLP|gowlings";
   $next_project = "Brose";
 	include "templates/header.php";
@@ -8,10 +7,10 @@
 
 <section id="slideshow">
   <figure class="slide light-text">
-    <div class="lazy darken" data-src="assets/various/various_hero.png"></div>
+    <div class="lazy darken" data-src="assets/various/flux_hero.png"></div>
     <figcaption class="overlay">
-      <div class="industry">Industry | <?php echo $industry; ?></div>
-      <div class="title"><?php echo $title; ?></div>
+      <h2 class="industry">Industry | Self Promotion</h2>
+      <h1 class="title">Various</h1>
     </figcaption>
   </figure>
 </section>
@@ -34,7 +33,15 @@
 </section>
 
 <section id="project-artwork">
-  <img class="lazy" data-src="assets//_1.png">
+  <img class="lazy" data-src="assets/flux/flux_1.png">
+  <img class="lazy" data-src="assets/flux/flux_2.png">
+  <img class="lazy" data-src="assets/flux/flux_3.png">
+  <img class="lazy" data-src="assets/flux/flux_4.png">
+  <img class="lazy" data-src="assets/flux/flux_5.png">
+  <img class="lazy" data-src="assets/flux/flux_6.png">
+  <img class="lazy" data-src="assets/flux/flux_7.png">
+  <img class="lazy" data-src="assets/flux/flux_8.png">
+  <img class="lazy" data-src="assets/flux/flux_9.png">
 </section>
 
 <?php

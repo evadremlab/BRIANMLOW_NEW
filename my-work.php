@@ -7,77 +7,175 @@
   <figure class="slide light-text">
     <div class="lazy darken" data-src="assets/my_work/my_work_hero2.png"></div>
     <figcaption class="overlay">
-      <div class="title"><?php echo $title; ?></div>
+      <h1 class="title"><?php echo $title; ?></h1>
     </figcaption>
   </figure>
 </section>
 
-<section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
-      I’m an ambitious, creative, and strategic professional with over 15 years of experience 
-      in graphic design, art direction, communication strategy, advertising & editorial design, 
-      automated marketing, and project management in legal, corporate and ad agency environments.
-    </article>
-    <article class="project-components">
-      <ul>
-        <li>The Goal</li>
-        <li class="my-goal">
-          My objective is to obtain a design position within a multi-disciplinary environment. 
-          A position working collaboratively with an amazing creative team using strong concept, 
-          smart design process, development, strategy and marketing.
-        </li>
-      </ul>
-    </article>
-  </div>
-</section>
 
-<section id="skills" class="hidden display-after-load">
-  <header>Skills</header>
+<section id="featured-projects" class="hidden display-after-load">
   <div class="container">
-    <dl><!-- definition list -->
-      <dt>Branding</dt><!-- title -->
-      <div class="item-container">
-        <dd>Brand Strategy</dd><!-- description -->
-        <dd>Identity</dd>
-        <dd>Graphic Design</dd>
-        <dd>Advertising</dd>
-        <dd>Collateral</dd>
-        <dd>Promotional Items</dd>
-      </div>
-    </dl>
-    <dl>
-      <dt>Environments</dt>
-      <div class="item-container">
-        <dd>Production Design</dd>
-        <dd>Packaging</dd>
-        <dd>Architecture</dd>
-        <dd>Interiors</dd>
-        <dd>Signage</dd>
-      </div>
-    </dl>
-    <dl>
-      <dt>Digital</dt>
-      <div class="item-container">
-        <dd>Advertising Strategy &amp; Planning</dd>
-        <dd>UX Design &amp; Development</dd>
-        <dd>Online Advertising</dd>
-        <dd>Automated e-Marketing</dd>
-      </div>
-    </dl>
-    <dl>
-      <dt>Marketing</dt>
-      <div class="item-container">
-        <dd>Strategy</dd>
-        <dd>Media Planning</dd>
-        <dd>Art Direction</dd>
-        <dd>Brochures</dd>
-        <dd>Guides</dd>
-        <dd>Copywriting</dd>
-        <dd>Tradeshow &amp; Event Materials</dd>
-        <dd>Holiday Cards</dd>
-      </div>
-    </dl>
+    <figure>
+      <a href="brose.php">
+        <div class="lazy" data-src="assets/brose/featured_brose.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Fashion</h2>
+          <h1 class="title">Brose</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="tutu.php">
+        <div class="lazy" data-src="assets/tutu/featured_tutu.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | food &amp; Beverage</h2>
+          <h1 class="title">TUTU Garden</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="bennett.php">
+        <div class="lazy" data-src="assets/bennett/featured_bennett.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Legal</h2>
+          <h1 class="title">Bennett Jones LLP</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="hok.php">
+        <div class="lazy" data-src="assets/hok/featured_hok.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Architecture</h2>
+          <h1 class="title">HOK</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="crayola.php">
+        <div class="lazy" data-src="assets/crayola/featured_crayola.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Consumer Goods</h2>
+          <h1 class="title">Crayola</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="inside.php">
+        <div class="lazy" data-src="assets/inside/featured_inside.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Entertainment</h2>
+          <h1 class="title">inside nightclub</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="galle.php">
+        <div class="lazy" data-src="assets/galle/featured_galle.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Photography</h2>
+          <h1 class="title">Vanessa Galle</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="aaron.php">
+        <div class="lazy" data-src="assets/aaron/featured_aaron.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Legal</h2>
+          <h1 class="title">Aaron Schwartz</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="kawasaki.php">
+        <div class="lazy" data-src="assets/kawasaki/featured_kawasaki.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Motorcycles</h2>
+          <h1 class="title">Kawasaki</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="stella.php">
+        <div class="lazy" data-src="assets/stella/featured_stella.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Fashion</h2>
+          <h1 class="title">Stella &amp; Dot</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="sony.php">
+        <div class="lazy" data-src="assets/sony/featured_sony.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Entertainment</h2>
+          <h1 class="title">Sony Insider</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="spectral.php">
+        <div class="lazy" data-src="assets/spectral/featured_spectral.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Medical</h2>
+          <h1 class="title">Spectral Diagnostics</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="urbantilt.php">
+        <div class="lazy" data-src="assets/urbantilt/featured_urbantilt.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Photography</h2>
+          <h1 class="title">urbantilt</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="bombardier.php">
+        <div class="lazy" data-src="assets/bombardier/featured_bombardier.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Aerospace</h2>
+          <h1 class="title">Bombardier</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="gowlings.php">
+        <div class="lazy" data-src="assets/urbantilt/featured_urbantilt.png"></div>
+        <div class="lazy darken" data-src="assets/gowlings/gowlings_hero.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Legal</h2>
+          <h1 class="title">Gowlings LLP</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="various.php">
+        <div class="lazy darken" data-src="assets/various/flux_hero.png"></div>
+        <figcaption class="overlay">
+          <h2 class="industry">Industry | Self Promotion</h2>
+          <h1 class="title">Various</h1>
+          <div class="link">View Project</div>
+        </figcaption>
+      </a>
+    </figure>
   </div>
 </section>
 

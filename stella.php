@@ -1,6 +1,5 @@
 <?php
   $title = "Stella &amp; Dot";
-  $industry = "Fashion";
   $prev_project = "Kawasaki";
   $next_project = "Sony Insider|sony";
 	include "templates/header.php";
@@ -10,8 +9,8 @@
   <figure class="slide dark-text">
     <div class="lazy darken" data-src="assets/stella/stella_hero.png"></div>
     <figcaption class="overlay">
-      <div class="industry">Industry | <?php echo $industry; ?></div>
-      <div class="title"><?php echo $title; ?></div>
+      <h2 class="industry">Industry | Fashion</h2>
+      <h1 class="title">Stella &amp; Dot</h1>
     </figcaption>
   </figure>
 </section>
