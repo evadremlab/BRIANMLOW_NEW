@@ -1,3 +1,7 @@
+<?php
+  include "scripts/functions.php";
+  $page_name = strtolower(basename($_SERVER['PHP_SELF'],'.php')) . '-page';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,4 +32,7 @@
       </nav>
     </div>
   </div>
-  <main id="content" role="main">
+  <main id="<?php echo $page_name; ?>" role="main">
+  <?php
+    include "templates/next-prev-project.php";
+  ?>

@@ -1,4 +1,5 @@
 body {
+  font-weight: 400;
   overflow-x: hidden; /* HACK: hide offscreen slideout menu */
 }
 body > header {
@@ -19,18 +20,18 @@ footer {
 }
 
 section {
-  position: relative;
+  position: relative; /* so that header can be positioned absolutely, relative to the section */
 }
 section header {
-  display: block;
   position: absolute;
+  top: -1rem;
+  width: 18rem;
   color: #fff;
   background-color: #000;
-  width: 15rem;
   font-size: 1.25rem;
+  font-weight: 600;
   text-align: right;
   padding-right: 1rem;
-  top: -1rem;
   z-index: 2; /* over other page content */
 }
 
@@ -59,14 +60,12 @@ section header {
 #slideout-menu nav {
   position: absolute;
   top: 0;
-  left: 100vw; /* offscreen to the right  */
+  left: 100vw; /* offscreen to the right */
   width: 100%;
-  height: calc(100vh - 5.75rem); /* minus header, so we don't get a vscrollbar */
-  z-index: 999; /* above the page content */
+  height: calc(100vh - 5.75rem); /* minus header, so we don't get an unnecessary vscrollbar */
+  z-index: 999; /* above all page content */
   background-color: #111;
-  transition-property: left;
-  transition-duration: .5s;
-  transition-timing-function: ease-in-out;
+  transition: left .5s ease-in-out; /* property, duration, timing function */
 }
 #slideout-menu.open nav {
   left: 0;
@@ -119,6 +118,15 @@ section header {
 .slide img {
   width: 100%; /* scale to fit window */
 }
+#slideshow div.lazy {
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#brose-page div.lazy {
+  background-position: top center;
+}
 .slide.light-text .overlay {
   color: #fff;
 }
@@ -158,20 +166,6 @@ section header {
 
 /* SITE TAGLINE */
 
-#site-tagline {
-  position: relative;
-}
-#site-tagline header {
-  z-index: 2; /* above slideshow */
-  display: inline-block;
-  position: absolute;
-  top: -1.75rem;
-  color: #fff;
-  background-color: #111;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem 0.5rem 5rem;
-}
 #site-tagline p {
   color: #666;
   font-size: 2rem;
@@ -190,20 +184,6 @@ section header {
 
 /* FEATURED PROJECTS */
 
-#featured-projects {
-  position: relative; /* so we can position header*/
-}
-#featured-projects header {
-  display: inline-block;
-  position: absolute;
-  top: -1.75rem;
-  color: #fff;
-  background-color: #111;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem 0.5rem 5rem;
-  z-index: 1; /* so it appears over container */
-}
 #featured-projects .container {
   display: flex;
   flex-wrap: wrap;
@@ -417,7 +397,7 @@ li.my-goal::before {
   display: none;  
 }
 
-img.darken {
+.darken {
   filter: brightness(50%);
 }
 

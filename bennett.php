@@ -6,9 +6,9 @@
   include "templates/header.php";
 ?>
 
-<section id="slideshow"
-  <figure class="slide active-slide light-text">
-    <img src="assets/bennett/bennett_hero.png" class="darken" />
+<section id="slideshow">
+  <figure class="slide light-text">
+    <div class="lazy darken" data-src="assets/bennett/bennett_hero.png"></div>
     <figcaption class="overlay">
       <div class="industry">Industry | <?php echo $industry; ?></div>
       <div class="title"><?php echo $title; ?></div>
@@ -45,12 +45,20 @@
   <img class="lazy" data-src="assets/bennett/bennett_1.png">
   <img class="lazy" data-src="assets/bennett/bennett_2.png">
   <div style="text-align:center">
-    <iframe src="https://player.vimeo.com/video/143406001" width="800" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="" width="800" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <img class="lazy" data-src="assets/bennett/bennett_4.png">
   <img class="lazy" data-src="assets/bennett/bennett_4B.png">
   <img class="lazy" data-src="assets/bennett/bennett_5.png">
 </section>
+
+<script>
+  function onPageLoad() {
+    setTimeout(function() { // lazy load the video
+      $('iframe').attr('src', 'https://player.vimeo.com/video/143406001');
+    }, 100);
+  }
+</script>
 
 <?php
   include "templates/next-prev-project.php";

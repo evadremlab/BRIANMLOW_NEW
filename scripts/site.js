@@ -31,12 +31,16 @@ var hideSlideoutMenu = debounce(function() {
 
 $(function () { // on page load
   $('.lazy').Lazy(); // lazy load images
-
+  
   if (typeof onPageLoad == 'function') { // may be defined on individual pages
     onPageLoad();
   }
 
-  setTimeout(function() { // fix weird flash of content below slideshow
+  setTimeout(function() {
+    // animate the title of the first slide
+    $('#slideshow .slide:first-child()').addClass('active-slide');
+    
+    // fix weird flash of content below slideshow
     $('.display-after-load').removeClass('hidden');
   }, 10);
 

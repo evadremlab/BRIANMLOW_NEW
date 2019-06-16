@@ -1,13 +1,14 @@
 <?php
-	$title = "Crayola";
+  $title = "Crayola";
+  $industry = "Consumer Goods";
   $prev_project = "Bennett Jones LLP|bennett";
   $next_project = "inside nightclub|inside";
 	include "templates/header.php";
 ?>
 
-<section id="slideshow"
-  <figure class="slide active-slide light-text">
-    <img src="assets/crayola/crayola_hero.png" class="darken" />
+<section id="slideshow">
+  <figure class="slide light-text">
+    <div class="lazy darken" data-src="assets/crayola/crayola_hero.png"></div>
     <figcaption class="overlay">
       <div class="industry">Industry | <?php echo $industry; ?></div>
       <div class="title"><?php echo $title; ?></div>

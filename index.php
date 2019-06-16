@@ -6,7 +6,7 @@
 <!-- On OSX, serve using: php -S localhost:8080 -->
 
 <section id="slideshow">
-  <figure class="slide active-slide dark-text">
+  <figure class="slide dark-text">
     <img src="assets/urbantilt/urbantilt_hero.png" />
     <figcaption class="overlay">
       <div class="industry">Industry | Photography</div>

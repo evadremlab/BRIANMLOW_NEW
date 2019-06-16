@@ -6,9 +6,9 @@
 	include "templates/header.php";
 ?>
 
-<section id="slideshow"
-  <figure class="slide active-slide dark-text">
-    <img src="assets/urbantilt/urbantilt_hero.png" class="darken" />
+<section id="slideshow">
+  <figure class="slide dark-text">
+    <div class="lazy darken" data-src="assets/urbantilt/urbantilt_hero.png"></div>
     <figcaption class="overlay">
       <div class="industry">Industry | <?php echo $industry; ?></div>
       <div class="title"><?php echo $title; ?></div>
