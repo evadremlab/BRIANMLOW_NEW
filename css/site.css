@@ -1,9 +1,7 @@
 body {
   font-weight: 400;
-  overflow-x: hidden; /* HACK: hide offscreen slideout menu */
 }
 body > header {
-  display: flex;
   position: relative;
   padding: 1rem;
   background-color: #000;
@@ -17,6 +15,11 @@ footer {
   padding-right: 1rem;
   height: 3rem;
   line-height: 3rem; /* vertically centered */
+}
+
+main {
+  position: relative;
+  overflow-x: hidden; /* so that slideout menu is hidden when offscreen */
 }
 
 section {
@@ -51,13 +54,8 @@ section header {
   transform: rotate(90deg);
 }
 
-#slideout-menu {
-  position: relative;
-}
-#slideout-menu .container { /* so we don't get an hscroll bar on the offscreen menu below  */
-  overflow: hidden;
-}
-#slideout-menu nav {
+nav#slideout-menu {
+  display: none;
   position: absolute;
   top: 0;
   left: 100vw; /* offscreen to the right */
@@ -67,7 +65,7 @@ section header {
   background-color: #111;
   transition: left .5s ease-in-out; /* property, duration, timing function */
 }
-#slideout-menu.open nav {
+nav#slideout-menu.open {
   left: 0;
 }
 #slideout-menu ul {
@@ -201,14 +199,14 @@ section header {
 }
 #my-work-page #featured-projects figure {
   height: 600px;
-  flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
+  flex-basis: 50%;
 }
-#featured-projects figure:nth-child(1) { /* first project */
-  flex: 1 0 35%;
+#featured-projects figure:nth-child(1),
+#featured-projects figure:nth-child(5),
+#featured-projects figure:nth-child(9) {
+  flex-basis: 35%;
 }
-#featured-projects figure:nth-last-child() { /* last project */
-  flex: 1 0 35%;
-}
+
 #featured-projects .lazy {
   height: inherit;
   background-size: cover;
@@ -440,5 +438,20 @@ figure {
   }
   100% {
     visibility: visible;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width : 1024px) {
+  #site-tagline p {
+    font-size: 1.5rem;
+  }
+  .overlay {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  #featured-projects figure {
+    flex-basis: 50% !important; /* so that overlay text is still readable */
   }
 }

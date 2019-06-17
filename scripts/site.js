@@ -26,7 +26,10 @@ function debounce(func, wait, immediate) { // from https://davidwalsh.name/javas
 };
 
 var hideSlideoutMenu = debounce(function() {
-  $('#menu-toggle,#slideout-menu').removeClass('open');
+  if ($('#menu-toggle').hasClass('open')) {
+    $('#menu-toggle').removeClass('open');
+    $('#slideout-menu').hide().removeClass('open'); // hide before animation starts
+  }
 }, 250);
 
 $(function () { // on page load
@@ -49,6 +52,9 @@ $(function () { // on page load
 
   $('#menu-toggle').click(function () {
     $(this).toggleClass('open');
-    $('#slideout-menu').toggleClass('open');
+    $('#slideout-menu').show();
+    setTimeout(function() {
+      $('#slideout-menu').toggleClass('open');
+    })
   });
 });

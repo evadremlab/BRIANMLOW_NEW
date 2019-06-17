@@ -20,17 +20,13 @@
     </a>
     <img id="menu-toggle" src="assets/menu-toggle.svg" />
   </header>
-  <div id="slideout-menu">
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="/">home</a></li>
-          <li><a href="about.php">about me</a></li>
-          <li><a href="my-work.php">my work</a></li>
-          <li><a href="contact.php">contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
   <main id="<?php echo $page_name; ?>" role="main">
+    <nav id="slideout-menu">
+      <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="about.php">about me</a></li>
+        <li><a href="my-work.php">my work</a></li>
+        <li><a href="contact.php">contact</a></li>
+      </ul>
+    </nav>
   
