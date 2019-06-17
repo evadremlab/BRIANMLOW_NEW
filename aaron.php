@@ -23,12 +23,12 @@
       a timeless serif-based typeface in metallic pantones.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Logo Concept &amp; Development</li>
-        <li>Branding &amp; Graphic Design</li>
-        <li>Print Collateral</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Logo Concept &amp; Development</dd>
+        <dd>Branding &amp; Graphic Design</dd>
+        <dd>Print Collateral</dd>
+      </dl>
     </article>
   </div>
 </section>

@@ -23,11 +23,11 @@
       If I never do a clipping path around a motorcycle again - it'll be too soon.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Concept and Post-Production</li>
-        <li>Layout &amp; Design</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Concept and Post-Production</dd>
+        <dd>Layout &amp; Design</dd>
+      </dl>
     </article>
   </div>
 </section>

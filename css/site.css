@@ -123,14 +123,12 @@ section header {
 .dark-text .overlay {
   color: #111;
 }
-.overlay .industry, .overlay .title, .overlay .link {
+.overlay * {
   position: relative;
   left: -100vw; /* offscreen to the left */
   transition: all .5s ease-in-out;
 }
-.active-slide .overlay .industry,
-.active-slide .overlay .title,
-.active-slide .overlay .link {
+.active-slide .overlay * {
   left: 0;
 }
 .overlay .industry, .overlay .my-work {
@@ -217,13 +215,16 @@ section header {
   background-repeat: no-repeat;
   transition: all .5s ease;
 }
+#featured-projects figure:hover * {
+  left: 0;
+}
+#featured-projects figure:hover .lazy {
+  filter: brightness(50%);
+}
 #featured-projects figure a {
   display: block;
   width: 100%;
   height: 100%;
-}
-#featured-projects figure:hover .lazy {
-  filter: brightness(50%);
 }
 #featured-projects .overlay {
   top: 1rem;
@@ -244,11 +245,6 @@ section header {
 #featured-projects .link:hover::after {
   content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
   display: inline;
-}
-#featured-projects figure:hover .industry,
-#featured-projects figure:hover .title,
-#featured-projects figure:hover .link {
-  left: 0;
 }
 
 /* PROJECT PAGE */
@@ -278,19 +274,22 @@ section header {
 .project-components {
   padding: 4rem;
 }
-.project-components ul {
+.project-components dt {
+  padding-bottom: 1rem;
+}
+.project-components dl {
   list-style: none;
   padding-left: 1rem;
   font-size: 1.25rem;
   letter-spacing: -1px;
   font-weight: 600;
 }
-.project-components li::before {
+.project-components dd::before {
   content: "\2014\00a0\00a0\00a0\00a0"; /* mdash and 4 spaces */
   color: silver;
   font-weight: normal;
 }
-.project-components li:nth-child(even) {
+.project-components dd:nth-child(even) {
   color: gray;
 }
 
@@ -357,14 +356,14 @@ li.my-goal::before {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-#skills dt::before {
+dl.with-dt-mdash dt::before {
   content: "\2014"; /* mdash */
   display: inline-block;
   width: 3rem;
   color: #00ffff;
   font-weight: 200;
 }
-#skills .item-container {
+dl .item-container {
   margin-left: 3rem; /* align with dt::before */
 }
 #skills dd {
@@ -374,11 +373,11 @@ li.my-goal::before {
   display: inline-block;
 }
 #skills dd::after {
-  content: "\00a0/";
+  content: "\00a0/"; /* space and forward slash */
   display: inline-block;
   color: #00ffff;
 }
-#skills dd:last-child::after {
+#skills dd:last-child::after { /* but no slash on the last one */
   content: " ";
 }
 

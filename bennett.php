@@ -23,19 +23,19 @@
       signage, internal marketing collateral, website/social media updates and e-marketing campaigns.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Art &amp; Creative Direction</li>
-        <li>Branding &amp; Graphic Design</li>
-        <li>Print &amp; Digital Media</li>
-        <li>Media Strategy</li>
-        <li>Advertising</li>
-        <li>Training &amp; Technical Writing</li>
-        <li>Automated Marketing Software (Vuture)</li>
-        <li>Project Management &amp; Tracking (Producteev)</li>
-        <li>Copywriting</li>
-        <li>Multilingual Marketing Materials</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Art &amp; Creative Direction</dd>
+        <dd>Branding &amp; Graphic Design</dd>
+        <dd>Print &amp; Digital Media</dd>
+        <dd>Media Strategy</dd>
+        <dd>Advertising</dd>
+        <dd>Training &amp; Technical Writing</dd>
+        <dd>Automated Marketing Software (Vuture)</dd>
+        <dd>Project Management &amp; Tracking (Producteev)</dd>
+        <dd>Copywriting</dd>
+        <dd>Multilingual Marketing Materials</dd>
+      </dl>
     </article>
   </div>
 </section>

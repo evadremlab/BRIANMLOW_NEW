@@ -23,13 +23,13 @@
       that could double as a CD insert in the future.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Creative Direction</li>
-        <li>Concept &amp; Strategy</li>
-        <li>Print &amp; Graphic Design</li>
-        <li>Website Design &amp; Development</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Creative Direction</dd>
+        <dd>Concept &amp; Strategy</dd>
+        <dd>Print &amp; Graphic Design</dd>
+        <dd>Website Design &amp; Development</dd>
+      </dl>
     </article>
   </div>
 </section>

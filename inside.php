@@ -22,12 +22,12 @@
       Those included: stationary, VIP passes, matchboxes, postcards and advertising.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Logo Design &amp; Creative Direction</li>
-        <li>Stationary &amp; Print Materials</li>
-        <li>Advertising Design</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Logo Design &amp; Creative Direction</dd>
+        <dd>Stationary &amp; Print Materials</dd>
+        <dd>Advertising Design</dd>
+      </dl>
     </article>
   </div>
 </section>

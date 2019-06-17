@@ -23,12 +23,12 @@
       that could then be applied to their promotional materials, website and social media platforms.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Art &amp; Creative Direction</li>
-        <li>Branding &amp; Graphic Design</li>
-        <li>Print Design</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+          <dd>Art &amp; Creative Direction</dd>
+          <dd>Branding &amp; Graphic Design</dd>
+          <dd>Print Design</dd>
+      </dl>
     </article>
   </div>
 </section>

@@ -22,12 +22,12 @@
       of various projects I've created.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Logo Concept and Creation</li>
-        <li>Art &amp; Creative Direction</li>
-        <li>Layout &amp; Graphic Design</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Logo Concept and Creation</dd>
+        <dd>Art &amp; Creative Direction</dd>
+        <dd>Layout &amp; Graphic Design</dd>
+      </dl>
     </article>
   </div>
 </section>

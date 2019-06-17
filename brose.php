@@ -24,12 +24,12 @@
       embossing and vellum to round out the piece.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Logo Development</li>
-        <li>Concept, Layout, &amp; Design</li>
-        <li>Print Production</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Logo Development</dd>
+        <dd>Concept, Layout, &amp; Design</dd>
+        <dd>Print Production</dd>
+      </dl>
     </article>
   </div>
 </section>

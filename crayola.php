@@ -22,14 +22,14 @@
       ranging from: advertising to package design/development to website concepts and design.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Branding &amp; Graphic Design</li>
-        <li>Print Design</li>
-        <li>Website Concept &amp; Design</li>
-        <li>Packaging</li>
-        <li>Advertising</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Branding &amp; Graphic Design</dd>
+        <dd>Print Design</dd>
+        <dd>Website Concept &amp; Design</dd>
+        <dd>Packaging</dd>
+        <dd>Advertising</dd>
+      </dl>
     </article>
   </div>
 </section>

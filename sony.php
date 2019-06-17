@@ -23,11 +23,11 @@
       at the Sony Centre.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Concept, Layout &amp; Graphic Design</li>
-        <li>Print Design</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Concept, Layout &amp; Graphic Design</dd>
+        <dd>Print Design</dd>
+      </dl>
     </article>
   </div>
 </section>

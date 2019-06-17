@@ -24,11 +24,11 @@
       the downtown Ottawa area.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Concept, Layout &amp; Graphic Design</li>
-        <li>Print &amp; Signage Design</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Concept, Layout &amp; Graphic Design</dd>
+        <dd>Print &amp; Signage Design</dd>
+      </dl>
     </article>
   </div>
 </section>

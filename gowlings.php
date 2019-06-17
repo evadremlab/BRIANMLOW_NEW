@@ -26,15 +26,15 @@
       from mailing labels, stationary, powerpoint templates, etc.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Art &amp; Creative Direction</li>
-        <li>Branding &amp; Graphic Design</li>
-        <li>Print &amp; Digital Design</li>
-        <li>Advertising</li>
-        <li>Copywriting</li>
-        <li>Multilingual Marketing Materials</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Art &amp; Creative Direction</dd>
+        <dd>Branding &amp; Graphic Design</dd>
+        <dd>Print &amp; Digital Design</dd>
+        <dd>Advertising</dd>
+        <dd>Copywriting</dd>
+        <dd>Multilingual Marketing Materials</dd>
+      </dl>
     </article>
   </div>
 </section>

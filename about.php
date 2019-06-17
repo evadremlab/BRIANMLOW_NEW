@@ -20,14 +20,16 @@
       automated marketing, and project management in legal, corporate and ad agency environments.
     </article>
     <article class="project-components">
-      <ul>
-        <li>The Goal</li>
-        <li class="my-goal">
-          My objective is to obtain a design position within a multi-disciplinary environment. 
-          A position working collaboratively with an amazing creative team using strong concept, 
-          smart design process, development, strategy and marketing.
-        </li>
-      </ul>
+      <dl class="with-dt-mdash">
+        <dt>The Goal</dt>
+        <div class="item-container">
+          <dd>
+            My objective is to obtain a design position within a multi-disciplinary environment. 
+            A position working collaboratively with an amazing creative team using strong concept, 
+            smart design process, development, strategy and marketing.
+          </>
+        </div>
+      </dl>
     </article>
   </div>
 </section>
@@ -35,7 +37,7 @@
 <section id="skills" class="hidden display-after-load">
   <header>Skills</header>
   <div class="container">
-    <dl><!-- definition list -->
+    <dl class="with-dt-mdash"><!-- definition list -->
       <dt>Branding</dt><!-- title -->
       <div class="item-container">
         <dd>Brand Strategy</dd><!-- description -->
@@ -46,7 +48,7 @@
         <dd>Promotional Items</dd>
       </div>
     </dl>
-    <dl>
+    <dl class="with-dt-mdash">
       <dt>Environments</dt>
       <div class="item-container">
         <dd>Production Design</dd>
@@ -56,7 +58,7 @@
         <dd>Signage</dd>
       </div>
     </dl>
-    <dl>
+    <dl class="with-dt-mdash">
       <dt>Digital</dt>
       <div class="item-container">
         <dd>Advertising Strategy &amp; Planning</dd>
@@ -65,7 +67,7 @@
         <dd>Automated e-Marketing</dd>
       </div>
     </dl>
-    <dl>
+    <dl class="with-dt-mdash">
       <dt>Marketing</dt>
       <div class="item-container">
         <dd>Strategy</dd>

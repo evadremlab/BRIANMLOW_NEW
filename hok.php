@@ -24,13 +24,13 @@
       entertainment facilities and mixed use towers.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Art &amp; Creative Direction</li>
-        <li>Branding &amp; Graphic Design</li>
-        <li>Print Design</li>
-        <li>Large Format Poster Concept and Implementation</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Art &amp; Creative Direction</dd>
+        <dd>Branding &amp; Graphic Design</dd>
+        <dd>Print Design</dd>
+        <dd>Large Format Poster Concept and Implementation</dd>
+      </dl>
     </article>
   </div>
 </section>

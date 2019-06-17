@@ -24,14 +24,14 @@
       and incorporate bold colours to empower the brand.
     </article>
     <article class="project-components">
-      <p>Project Components:</p>
-      <ul>
-        <li>Logo Design</li>
-        <li>Branding &amp; Graphic Design</li>
-        <li>Menu &amp; Stationary Design</li>
-        <li>Print Design</li>
-        <li>Web, UI/UE Concept &amp; Design</li>
-      </ul>
+      <dl>
+        <dt>Project Components:</dt>
+        <dd>Logo Design</dd>
+        <dd>Branding &amp; Graphic Design</dd>
+        <dd>Menu &amp; Stationary Design</dd>
+        <dd>Print Design</dd>
+        <dd>Web, UI/UE Concept &amp; Design</dd>
+      </dl>
     </article>
   </div>
 </section>
