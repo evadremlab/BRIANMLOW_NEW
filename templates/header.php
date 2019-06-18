@@ -15,7 +15,7 @@
 </head>
 <body>
   <header>
-    <a href="/">
+    <a href="/" id="site-logo">
       <img src="assets/bml-logo.png">
     </a>
     <img id="menu-toggle" src="assets/menu-toggle.svg" />

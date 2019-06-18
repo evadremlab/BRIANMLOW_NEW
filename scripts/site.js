@@ -32,6 +32,11 @@ var hideSlideoutMenu = debounce(function() {
   }
 }, 250);
 
+window.addEventListener('touchstart', function onFirstTouch() { // detect a touch-device
+  document.body.classList.add('touch-device');
+  window.removeEventListener('touchstart', onFirstTouch, false);
+}, false);
+
 $(function () { // on page load
   $('.lazy').Lazy(); // lazy load images
   

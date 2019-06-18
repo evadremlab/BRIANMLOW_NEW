@@ -1,3 +1,6 @@
+html, body {
+  font-size: 14px;
+}
 body {
   font-weight: 400;
 }
@@ -108,8 +111,8 @@ nav#slideout-menu.open {
 
 .overlay {
   position: absolute;
-  top: 5rem;
-  left: 3rem;
+  top: 5vh;
+  left: 3vw;
   padding: 1rem;
   font-size: 2rem;
   line-height: 2rem;
@@ -124,7 +127,7 @@ nav#slideout-menu.open {
 .overlay * {
   position: relative;
   left: -100vw; /* offscreen to the left */
-  transition: all .5s ease-in-out;
+  /* transition: left .5s ease-in-out; */
 }
 .active-slide .overlay * {
   left: 0;
@@ -171,9 +174,9 @@ nav#slideout-menu.open {
 
 #site-tagline p {
   color: #666;
-  font-size: 2rem;
+  font-size: 2em;
+  line-height: 1.25em;
   font-style: italic;
-  line-height: 2.2rem;
   padding: 3rem 1rem;
 }
 #site-tagline p::before { /* left quotation mark */
@@ -211,7 +214,6 @@ nav#slideout-menu.open {
   height: inherit;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: all .5s ease;
 }
 #featured-projects figure:hover * {
   left: 0;
@@ -441,17 +443,76 @@ figure {
   }
 }
 
+/* TOUCH DEVICE - make image captions always appear as though hovered */
+
+body.touch-device #featured-projects .overlay,
+body.touch-device #featured-projects .overlay * {
+  left: 0 !important;
+}
+body.touch-device #featured-projects figure .lazy {
+  filter: brightness(50%);
+}
+body.touch-device #featured-projects .overlay .link::after {
+  content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
+  display: inline;
+}
+
 /* MEDIA QUERIES */
 
+/* iPad */
 @media only screen and (max-width : 1024px) {
-  #site-tagline p {
-    font-size: 1.5rem;
+  html, body {
+    font-size: 12px;
   }
-  .overlay {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+  .project-description {
+    padding: 2rem 4rem 4rem 4rem;
+  }
+}
+
+@media only screen and (max-width : 900px) {
+  #featured-projects figure {
+    flex-basis: 50% !important; /* expand images so overlay text is still readable */
+  }
+}
+
+@media only screen and (max-width : 667px) {
+  html, body {
+    font-size: 10.5px;
+  }
+  #site-tagline p {
+    font-size: 1.5em;
+  }
+  #slideshow .overlay {
+    top: 2vh; /* so VIEW PROJECT link is visble for all projects */
+  }
+  #slideshow .overlay .title {
+    font-size: 2.5em;
+  }
+  #slideshow .overlay .link {
+    margin-top: 1em; /* move up so it's visible */
+  }
+  #project-tagline article {
+    flex-basis: 100%;
+    font-size: 1.25rem;
+  }
+  .project-description {
+    padding: 2rem 1.5rem;
+    margin-top: 0; /* no need to overlay with image */
+  }
+  .project-components {
+    padding: 2rem 3rem;
   }
   #featured-projects figure {
-    flex-basis: 50% !important; /* so that overlay text is still readable */
+    flex-basis: 100% !important; /* expand images so overlay text is still readable */
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  #site-logo img {
+    width: 75%; /* so we don't overlap with the #menu-toggle */
+  }
+  #menu-toggle {
+    top: 15px; /* align with smaller header */
   }
 }
