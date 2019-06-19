@@ -1,6 +1,7 @@
 <?php
   include "scripts/functions.php";
   $page_name = strtolower(basename($_SERVER['PHP_SELF'],'.php')) . '-page';
+  $version = "?v=20190618"; // so we know they have this latest version of js/css
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@
   <title>Brian M Low | Graphic Design <?php echo $title ?></title>
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/slideshow.css">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/site.css<?php echo $version; ?>">
 </head>
 <body>
   <header>

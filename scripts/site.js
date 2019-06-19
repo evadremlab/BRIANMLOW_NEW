@@ -5,11 +5,6 @@ var deepThoughts = [
   "The memories of my family outings are still a source of strength to me. I remember we'd all pile into the car - I forget what kind it was - and drive and drive. I'm not sure where we'd go, but I think there were some trees there. The smell of something was strong in the air as we played whatever sport we played. I remember a bigger, older guy we called 'Dad'. We'd eat some stuff, or not, and then I think we went home. I guess some things never leave you."
 ];
 
-function displayRandomDeepThought() {
-  var rnd = Math.floor(Math.random() * deepThoughts.length);
-  $('#site-tagline p').text(deepThoughts[rnd]);
-}
-
 function debounce(func, wait, immediate) { // from https://davidwalsh.name/javascript-debounce-function
   var timeout;
   return function() {
@@ -25,6 +20,11 @@ function debounce(func, wait, immediate) { // from https://davidwalsh.name/javas
   };
 };
 
+function displayRandomDeepThought() {
+  var rnd = Math.floor(Math.random() * deepThoughts.length);
+  $('#site-tagline p').text(deepThoughts[rnd]);
+}
+
 var hideSlideoutMenu = debounce(function() {
   if ($('#menu-toggle').hasClass('open')) {
     $('#menu-toggle').removeClass('open');
@@ -32,13 +32,10 @@ var hideSlideoutMenu = debounce(function() {
   }
 }, 250);
 
-window.addEventListener('touchstart', function onFirstTouch() { // detect a touch-device
-  document.body.classList.add('touch-device');
-  window.removeEventListener('touchstart', onFirstTouch, false);
-}, false);
-
 $(function () { // on page load
-  $('.lazy').Lazy(); // lazy load images
+  setTimeout(function() {
+    $('.lazy').Lazy(); // lazy load images after 1/2 seconds
+  }, 500);
   
   if (typeof onPageLoad == 'function') { // may be defined on individual pages
     onPageLoad();
@@ -54,6 +51,10 @@ $(function () { // on page load
 
   $(window).scroll(hideSlideoutMenu);
   $(window).resize(hideSlideoutMenu);
+  $(window).one('touchstart', function() {
+    console.log('touched');
+    $('body').addClass('touch-device');
+  });
 
   $('#menu-toggle').click(function () {
     $(this).toggleClass('open');

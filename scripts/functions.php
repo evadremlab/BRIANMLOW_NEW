@@ -8,10 +8,10 @@
  * 
  * The $project_url is converted to lowercase and appended with ".php" to form a valid url.
  */
-  function getProjectLink($project) {
-    $project_parts = explode("|", $project, 2);
-    $project_name = $project_parts[0];
-    $project_url = (count($project_parts) > 1) ? $project_parts[1] : $project_name;
-    echo '<a href="' . strtolower($project_url) . '.php">' . $project_name . '</a>';
-  }
+function getProjectLink($project) {
+  $project_parts = explode("|", $project, 2);
+  $project_name = $project_parts[0];
+  $project_url = (count($project_parts) > 1) ? $project_parts[1] : $project_name;
+  echo '<a href="' . strtolower($project_url) . '.php">' . $project_name . '</a>';
+}
 ?>
