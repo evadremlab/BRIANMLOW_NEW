@@ -6,36 +6,44 @@
 
 <section id="slideshow">
   <figure class="slide dark-text">
-    <img src="assets/urbantilt/urbantilt_hero.png" />
-    <figcaption class="overlay">
-      <h2 class="my-work">My Work</h2>
-      <h1 class="title">urbantilt</h1>
-      <a href="urbantilt.php" class="link">View Project</a>
-    </figcaption>
+    <a href="urbantilt.php">
+      <img src="assets/urbantilt/urbantilt_hero.png" />
+      <figcaption class="overlay">
+        <h2 class="my-work">My Work</h2>
+        <h1 class="title">urbantilt</h1>
+        <div class="link">View Project</div>
+      </figcaption>
+    </a>
   </figure>
   <figure class="slide light-text">
-    <img class="lazy" data-src="assets/brose/brose_hero.png" />
-    <figcaption class="overlay">
-      <h2 class="my-work">My Work</h2>
-      <h1 class="title">Brose</h1>
-      <a href="brose.php" class="link">View Project</a>
-    </figcaption>
+    <a href="brose.php">
+      <img class="lazy" data-src="assets/brose/brose_hero.png" />
+      <figcaption class="overlay">
+        <h2 class="my-work">My Work</h2>
+        <h1 class="title">Brose</h1>
+        <div class="link">View Project</div>
+      </figcaption>
+    </a>
   </figure>
   <figure class="slide dark-text bennett">
-    <img class="lazy" data-src="assets/bennett/bennett_hero.png" />
-    <figcaption class="overlay">
-      <h2 class="my-work">My Work</h2>
-      <h1 class="title">Bennett Jones LLP</h1>
-      <a href="bennett.php" class="link">View Project</a>
-    </figcaption>
+    <a href="bennett.php">
+      <img class="lazy" data-src="assets/bennett/bennett_hero.png" />
+      <figcaption class="overlay">
+        <h2 class="my-work">My Work</h2>
+        <h1 class="title">Bennett Jones LLP</h1>
+        <div class="link">View Project</div>
+      </figcaption>
+    </a>
   </figure>
   <figure class="slide light-text">
-    <img class="lazy" data-src="assets/tutu/tutu_hero.png" />
-    <figcaption class="overlay">
-      <h2 class="my-work">My Work</h2>
-      <h1 class="title">TUTU Garden</h1>
-      <a href="tutu.php" class="link">View Project</a>
-    </figcaption>
+    <a href="tutu.php">
+      <img class="lazy" data-src="assets/tutu/tutu_hero.png" />
+      <figcaption class="overlay">
+        <h2 class="my-work">My Work</h2>
+        <h1 class="title">TUTU Garden</h1>
+        <div class="link">View Project</div>
+      </figcaption>
+    </a>
   </figure>
 </section>
 

@@ -156,7 +156,6 @@
     </figure>
     <figure>
       <a href="gowlings.php">
-        <div class="lazy" data-src="assets/urbantilt/featured_urbantilt.png"></div>
         <div class="lazy darken" data-src="assets/gowlings/gowlings_hero.png"></div>
         <figcaption class="overlay">
           <h2 class="industry">Industry | Legal</h2>
