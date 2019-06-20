@@ -31,27 +31,14 @@
     width: 40px;
     top: 20px; /* align smaller font size */
   }
-  #site-tagline p {
-    font-size: 1.5rem;
-  }
-  #slideshow .overlay {
-    top: 2vh; /* so VIEW PROJECT link is visble for all projects */
-  }
-  #slideshow .overlay .title {
-    font-size: 2.5rem;
-  }
   #email-sent-page .overlay .title span {
     display: block; /* show on next line */
-  }
-  #slideshow .overlay .link {
-    margin-top: 1rem; /* move up so it's visible */
   }
   #project-tagline article {
     flex-basis: 100%;
     font-size: 1.25rem;
   }
   #project-tagline .left {
-    padding: 2rem 1.5rem;
     margin-top: 0; /* no need to overlay with image */
   }
   #project-tagline .right {
@@ -69,12 +56,6 @@
   }
   nav.next-prev-project li:last-child {
     padding-right: 1rem;
-  }
-}
-
-@media only screen and (min-width : 600px) {
-  #featured-projects figure {
-    flex-basis: 100% !important; /* expand image width so overlay text is still readable */
   }
 }
 
@@ -103,5 +84,8 @@
   }
   nav.next-prev-project a {
     font-size: 1.15rem;
+  }
+  #skills dl {
+    padding: 0 2rem;
   }
 }

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="css/site.css<?php echo $version; ?>">
-  <!-- <link rel="stylesheet" href="css/media.css<?php echo $version; ?>"> -->
+  <link rel="stylesheet" href="css/media.css<?php echo $version; ?>">
 </head>
 <body>
   <header>
