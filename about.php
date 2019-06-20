@@ -5,7 +5,7 @@
 
 <section id="slideshow">
   <figure class="slide light-text">
-    <div class="lazy darken" data-src="assets/about/about_me.png"></div>
+    <div class="lazy darken" data-src="assets/about/about_me.png"></div>7
     <figcaption class="overlay">
       <h2 class="title"><?php echo $title; ?></h2>
     </figcaption>
@@ -13,13 +13,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I’m an ambitious, creative, and strategic professional with over 15 years of experience 
       in graphic design, art direction, communication strategy, advertising & editorial design, 
       automated marketing, and project management in legal, corporate and ad agency environments.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl class="with-dt-mdash">
         <dt>The Goal</dt>
         <div class="item-container">
@@ -36,7 +36,7 @@
 
 <section id="skills" class="hidden display-after-load">
   <header>Skills</header>
-  <div class="container">
+  <div class="flex-container">
     <dl class="with-dt-mdash"><!-- definition list -->
       <dt>Branding</dt><!-- title -->
       <div class="item-container">

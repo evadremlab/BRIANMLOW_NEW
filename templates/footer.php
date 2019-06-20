@@ -1,3 +1,8 @@
+    <nav class="next-prev-project">
+      <!-- for some reason, having a <nav> here "fixes" the double scrollbar issue -->
+      <?php getProjectLink('Previous', $prev_project); ?>
+      <?php getProjectLink('Next', $next_project); ?>
+    </nav>
   </main>
   <footer class="hidden display-after-load">
     &copy; <?php echo date("Y"); ?> Brian M Low. All Rights Reserved.

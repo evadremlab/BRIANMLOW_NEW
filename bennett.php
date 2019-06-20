@@ -16,13 +16,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       At Bennett Jones, the opportunities were many and varied, ranging from: 
       the design and production of brochures, guides, promotional materials, event invitations, 
       signage, internal marketing collateral, website/social media updates and e-marketing campaigns.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Art &amp; Creative Direction</dd>
@@ -60,6 +60,5 @@
 </script>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

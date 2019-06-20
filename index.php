@@ -1,9 +1,8 @@
 <?php
 	$title = "";
-	include "templates/header.php";
+  include "templates/header.php";
+  // On OSX, serve using: php -S localhost:8080
 ?>
-
-<!-- On OSX, serve using: php -S localhost:8080 -->
 
 <section id="slideshow">
   <figure class="slide dark-text">
@@ -22,7 +21,7 @@
       <a href="brose.php" class="link">View Project</a>
     </figcaption>
   </figure>
-  <figure class="slide dark-text">
+  <figure class="slide dark-text bennett">
     <img class="lazy" data-src="assets/bennett/bennett_hero.png" />
     <figcaption class="overlay">
       <h2 class="my-work">My Work</h2>
@@ -49,7 +48,7 @@
 
 <section id="featured-projects" class="hidden display-after-load">
   <header>Featured Projects</header>
-  <div class="container">
+  <div class="flex-container">
     <figure>
       <a href="bennett.php">
         <div class="lazy" data-src="assets/bennett/featured_bennett.png"></div>

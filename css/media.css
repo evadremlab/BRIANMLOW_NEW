@@ -1,0 +1,107 @@
+
+/* MEDIA QUERIES */
+
+/* iPad */
+@media only screen and (max-width : 1024px) {
+  html, body {
+    font-size: 12px;
+  }
+  #project-tagline .left {
+    padding: 2rem 4rem 4rem 4rem;
+  }
+  nav.next-prev-project li:first-child {
+    padding-left: 5rem;
+  }
+  nav.next-prev-project li:last-child {
+    padding-right: 5rem;
+  }
+}
+
+@media only screen and (max-width : 900px) {
+  #featured-projects figure {
+    flex-basis: 50% !important; /* expand images so overlay text is still readable */
+  }
+}
+
+@media only screen and (max-width : 667px) {
+  html, body {
+    font-size: 10.5px;
+  }
+  #menu-toggle {
+    width: 40px;
+    top: 20px; /* align smaller font size */
+  }
+  #site-tagline p {
+    font-size: 1.5rem;
+  }
+  #slideshow .overlay {
+    top: 2vh; /* so VIEW PROJECT link is visble for all projects */
+  }
+  #slideshow .overlay .title {
+    font-size: 2.5rem;
+  }
+  #email-sent-page .overlay .title span {
+    display: block; /* show on next line */
+  }
+  #slideshow .overlay .link {
+    margin-top: 1rem; /* move up so it's visible */
+  }
+  #project-tagline article {
+    flex-basis: 100%;
+    font-size: 1.25rem;
+  }
+  #project-tagline .left {
+    padding: 2rem 1.5rem;
+    margin-top: 0; /* no need to overlay with image */
+  }
+  #project-tagline .right {
+    padding: 2rem;
+  }
+  #featured-projects figure,
+  #my-work-page #featured-projects figure {
+    height: 250px;
+  }
+  nav.next-prev-project a {
+    font-size: 1.25rem;
+  }
+  nav.next-prev-project li:first-child {
+    padding-left: 1rem;
+  }
+  nav.next-prev-project li:last-child {
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-width : 600px) {
+  #featured-projects figure {
+    flex-basis: 100% !important; /* expand image width so overlay text is still readable */
+  }
+}
+
+@media only screen and (max-width : 375px) {
+  #email-sent-page .overlay .title {
+    font-size: 2rem;
+  }
+  #email-sent-page .overlay .title span { /* show on the same line */
+    display: inline;
+    padding-left: .25rem;
+  }
+  #slideshow div.lazy {
+    height: 60vh;
+  }
+  #featured-projects figure {
+    flex-basis: 100% !important; /* expand image width so overlay text is still readable */
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  #site-logo img {
+    width: 75%; /* so we don't overlap with the #menu-toggle */
+  }
+  #menu-toggle {
+    top: 15px; /* align with smaller header */
+  }
+  nav.next-prev-project a {
+    font-size: 1.15rem;
+  }
+}

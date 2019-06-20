@@ -16,13 +16,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I worked with urbantilt to revamp their existing logo, 
       we added a modern feel by utilizing a bold typeface and accent colour 
       that could then be applied to their promotional materials, website and social media platforms.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
           <dd>Art &amp; Creative Direction</dd>
@@ -42,6 +42,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

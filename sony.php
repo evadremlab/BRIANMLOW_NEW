@@ -16,13 +16,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I was tasked with the concept, design and development for a newsletter 
       that Sony would send to its subscribers on a quarterly basis, showcasing its upcoming productions 
       at the Sony Centre.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Concept, Layout &amp; Graphic Design</dd>
@@ -39,6 +39,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

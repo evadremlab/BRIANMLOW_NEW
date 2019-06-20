@@ -16,12 +16,12 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I was fortunate enough to work on a variety of projects for Crayola, 
       ranging from: advertising to package design/development to website concepts and design.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Branding &amp; Graphic Design</dd>
@@ -45,6 +45,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

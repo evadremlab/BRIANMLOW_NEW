@@ -16,13 +16,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I was involved in the concept, post-production and layout of the following advertisments. 
       Bikes were on loan, staged and shot in a studio with the backgrounds added later. 
       If I never do a clipping path around a motorcycle again - it'll be too soon.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Concept and Post-Production</dd>
@@ -39,6 +39,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

@@ -12,9 +12,8 @@
   </figure>
 </section>
 
-
 <section id="featured-projects" class="hidden display-after-load">
-  <div class="container">
+  <div class="flex-container">
     <figure>
       <a href="brose.php">
         <div class="lazy" data-src="assets/brose/featured_brose.png"></div>

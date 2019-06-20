@@ -16,14 +16,14 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I reworked the existing logo so it would lend itself to various applications 
       and have a stronger presence when used as a stand-alone. The updated logo was used to add elements 
       to the 2017 Fall/Winter Collection Lookbook. A simple, clean approach, finished with die-cut, 
       embossing and vellum to round out the piece.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Logo Development</dd>
@@ -50,6 +50,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

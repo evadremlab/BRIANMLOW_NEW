@@ -16,14 +16,14 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       TUTU Garden wanted to rebrand with the goal of appealing and attracting a wider, 
       more tech-savvy customer base. From logo development to web/UI interface, 
       the approach was simple - create a clean, memorable icon to represent the business 
       and incorporate bold colours to empower the brand.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Logo Design</dd>
@@ -47,6 +47,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

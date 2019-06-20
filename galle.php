@@ -16,13 +16,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       Vanessa approached me with a request for a self-promo piece that she could distribute 
       to potential clients. We ultimately decided on a four-panel, double-sided, perfed piece 
       that could double as a CD insert in the future.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Creative Direction</dd>
@@ -43,6 +43,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

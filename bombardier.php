@@ -16,13 +16,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I was responsible for the concept and design of Bombardiers' quarterly reports. 
       Other unique opportunities that crossed my desk were to create a logo to mark the production 
       of the 1000th CRJ airliner, and conceptualize/design airplane graphics for Asia-bound aircraft.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Logo Concepts</dd>
@@ -41,6 +41,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

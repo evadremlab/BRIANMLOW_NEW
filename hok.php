@@ -16,14 +16,14 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       Having worked for HOK, a global architectural firm, I've had the opportunity to work on many 
       interesting projects ranging from proposal/pitch documents to full project overview guides 
       and support materials, for industries spanning aviation to sports, recreation, 
       entertainment facilities and mixed use towers.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Art &amp; Creative Direction</dd>
@@ -46,6 +46,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

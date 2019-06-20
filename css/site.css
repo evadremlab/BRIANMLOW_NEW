@@ -1,5 +1,5 @@
 html, body {
-  font-size: 14px;
+  font-size: 16px;
 }
 body {
   font-weight: 400;
@@ -34,7 +34,7 @@ section header {
   width: 18rem;
   color: #fff;
   background-color: #000;
-  font-size: 1.25rem;
+  /* font-size: 1rem; */
   font-weight: 600;
   text-align: right;
   padding-right: 1rem;
@@ -111,18 +111,22 @@ nav#slideout-menu.open {
 
 .overlay {
   position: absolute;
-  top: 5vh;
-  left: 3vw;
-  padding: 1rem;
-  font-size: 2rem;
-  line-height: 2rem;
+  top: 0;
+  left: 0;
+  /* font-size: 2rem;
+  line-height: 2rem; */
   color: #111;
+  padding: 5vh 1rem 3vh 1rem;
 }
 .light-text .overlay {
   color: #fff;
 }
 .dark-text .overlay {
   color: #111;
+}
+figure.bennett h1 { /* so dark text is readable on dark part of image */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: darkgoldenrod;
 }
 .overlay * {
   position: relative;
@@ -133,20 +137,20 @@ nav#slideout-menu.open {
   left: 0;
 }
 .overlay .industry, .overlay .my-work {
-  font-size: 1em;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 .overlay .my-work {
   text-transform: uppercase;
 }
 .overlay .title {
-  font-size: 3em;
-  line-height: 1em;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 .overlay .link {
   display: block;
-  margin-top: 4em;
-  font-size: .75em;
+  margin-top: 3rem;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -160,13 +164,13 @@ nav#slideout-menu.open {
 .slide img {
   width: 100%; /* scale to fit window */
 }
-#slideshow div.lazy {
+#slideshow .lazy {
   height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-#brose-page div.lazy {
+#brose-page .lazy {
   background-position: top center;
 }
 
@@ -174,10 +178,10 @@ nav#slideout-menu.open {
 
 #site-tagline p {
   color: #666;
-  font-size: 2em;
-  line-height: 1.25em;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-style: italic;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 #site-tagline p::before { /* left quotation mark */
   content: "\201C"; /* https://css-tricks.com/snippets/html/glyphs */
@@ -190,10 +194,6 @@ nav#slideout-menu.open {
 
 /* FEATURED PROJECTS */
 
-#featured-projects .container {
-  display: flex;
-  flex-wrap: wrap;
-}
 #featured-projects figure {
   position: relative; /* for positioning the mask and overlay */
   overflow: hidden;
@@ -201,7 +201,7 @@ nav#slideout-menu.open {
   flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
 }
 #my-work-page #featured-projects figure {
-  height: 600px;
+  /* height: 600px; */
   flex-basis: 50%;
 }
 #featured-projects figure:nth-child(1),
@@ -227,19 +227,30 @@ nav#slideout-menu.open {
   height: 100%;
 }
 #featured-projects .overlay {
-  top: 1rem;
-  left: 1rem;
   color: #fff;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  padding: 1rem; /* adjust text position */
 }
 #my-work-page #featured-projects .overlay {
-  top: 5rem;
-  left: 3rem;
+  /* top: 5rem;
+  left: 3rem; */
   color: #fff;
+  /* font-size: 1em; */
+}
+#featured-projects .overlay .industry, 
+#featured-projects .overlay .my-work {
   font-size: 1rem;
+  font-weight: 200;
+}
+#featured-projects .overlay .title {
+  font-size: 3rem;
+  line-height: 3rem;
 }
 #featured-projects .overlay .link {
-  margin-top: 2em;
+  margin-top: 1.5rem;
+  font-size: .9rem;
+}
+#featured-projects .overlay .link {
   color: #fff; /* same as industry and title */
 }
 #featured-projects .link:hover::after {
@@ -255,41 +266,43 @@ nav#slideout-menu.open {
 #project-tagline {
   position: relative;
 }
-#project-tagline .container {
-  display: flex;
-  flex-wrap: wrap;
-}
 #project-tagline article {
   flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
   font-size: 1.5rem;
 }
-.project-description {
+.left {
   color: #fff;
   background-color: #111;
-  margin-top: -2rem; /* a bit higher than the project-components */
+  margin-top: -2rem; /* a bit higher than the right side */
   padding: 4rem 6rem 6rem 6rem;
   font-style: italic;
   z-index: 2; /* over the hero image */
 }
-.project-components {
+#project-tagline .right {
   padding: 4rem;
 }
-.project-components dt {
+#project-tagline .right dt {
   padding-bottom: 1rem;
 }
-.project-components dl {
+#project-tagline .right dl {
   list-style: none;
   padding-left: 1rem;
   font-size: 1.25rem;
   letter-spacing: -1px;
   font-weight: 600;
 }
-.project-components dd::before {
+#project-tagline .right dd::before {
   content: "\2014\00a0\00a0\00a0\00a0"; /* mdash and 4 spaces */
   color: silver;
   font-weight: normal;
 }
-.project-components dd:nth-child(even) {
+#about-page #project-tagline .right dd {
+  font-weight: 300;
+}
+#about-page #project-tagline .right dd::before {
+  content: ""; /* not needed here */
+}
+#project-tagline .right dd:nth-child(even) {
   color: gray;
 }
 
@@ -310,17 +323,17 @@ nav.next-prev-project li {
   flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
 }
 nav.next-prev-project li:first-child {
-  padding-left: 10rem;
+  padding-left: 5rem;
 }
 nav.next-prev-project li:last-child {
   text-align: right;
-  padding-right: 10rem;
+  padding-right: 5rem;
 }
 nav.next-prev-project header {
   color: silver;
 }
 nav.next-prev-project a {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -340,10 +353,6 @@ li.my-goal::before {
   padding: 1rem 0;
   color: #fff;
   background-color: #000;
-}
-#skills .container {
-  display: flex;
-  flex-wrap: wrap;
 }
 #skills dl {
   flex: 1 0 50%; /* flex-grow, flex-shrink, flex-basis */
@@ -385,8 +394,9 @@ dl .item-container {
   padding: 0 6rem;
 }
 #clients img { /* 6 per row */
+  padding: 0 10px;
   max-width: calc(100% / 6);
-  flex: 0 0 calc(100% / 6); /* flex-grow, flex-shrink, flex-basis */
+  flex: 0 0 calc(100% / 6);
 }
 
 #skills header, #clients header {
@@ -406,7 +416,7 @@ dl .item-container {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .under-construction {
@@ -455,86 +465,4 @@ body.touch-device #featured-projects figure .lazy {
 body.touch-device #featured-projects .overlay .link::after {
   content: " \00bb"; /* from http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order */
   display: inline;
-}
-
-/* MEDIA QUERIES */
-
-/* iPad */
-@media only screen and (max-width : 1024px) {
-  html, body {
-    font-size: 12px;
-  }
-  .project-description {
-    padding: 2rem 4rem 4rem 4rem;
-  }
-  nav.next-prev-project li:first-child {
-    padding-left: 5rem;
-  }
-  nav.next-prev-project li:last-child {
-    padding-right: 5rem;
-  }
-}
-
-@media only screen and (max-width : 900px) {
-  #featured-projects figure {
-    flex-basis: 50% !important; /* expand images so overlay text is still readable */
-  }
-}
-
-@media only screen and (max-width : 667px) {
-  html, body {
-    font-size: 10.5px;
-  }
-  #menu-toggle {
-    width: 40px;
-    top: 20px; /* align smaller font size */
-  }
-  #site-tagline p {
-    font-size: 1.5em;
-  }
-  #slideshow .overlay {
-    top: 2vh; /* so VIEW PROJECT link is visble for all projects */
-  }
-  #slideshow .overlay .title {
-    font-size: 2.5em;
-  }
-  #slideshow .overlay .link {
-    margin-top: 1em; /* move up so it's visible */
-  }
-  #project-tagline article {
-    flex-basis: 100%;
-    font-size: 1.25rem;
-  }
-  .project-description {
-    padding: 2rem 1.5rem;
-    margin-top: 0; /* no need to overlay with image */
-  }
-  .project-components {
-    padding: 2rem 3rem;
-  }
-  #featured-projects figure {
-    flex-basis: 100% !important; /* expand images so overlay text is still readable */
-    height: 250px;
-  }
-  nav.next-prev-project a {
-    font-size: 1.25em;
-  }
-  nav.next-prev-project li:first-child {
-    padding-left: 1rem;
-  }
-  nav.next-prev-project li:last-child {
-    padding-right: 1rem;
-  }
-}
-
-@media only screen and (max-width : 320px) {
-  #site-logo img {
-    width: 75%; /* so we don't overlap with the #menu-toggle */
-  }
-  #menu-toggle {
-    top: 15px; /* align with smaller header */
-  }
-  nav.next-prev-project a {
-    font-size: 1.15em;
-  }
 }

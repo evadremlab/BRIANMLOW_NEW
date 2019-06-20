@@ -16,14 +16,14 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I was approached by a Stella &amp; Dot representative to create various marketing pieces 
       to generate buzz for an upcoming tradeshow that would feature their merchandise. 
       Postcards were placed in various retailers and posters were sprinkled in and around 
       the downtown Ottawa area.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Concept, Layout &amp; Graphic Design</dd>
@@ -41,6 +41,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

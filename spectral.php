@@ -16,13 +16,13 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       I was the lead designer for the Spectral Diagnostics Blood Analysis line of products, 
       which included various package designs, supplemental inserts as well as additional 
       product logo concept/development (Decision Point).
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Art &amp; Creative Direction</dd>
@@ -42,6 +42,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>

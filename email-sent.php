@@ -1,17 +1,19 @@
 <?php
-	$title = "Contact";
+	$title = "Email Sent";
 	include "templates/header.php";
 ?>
 
 <style>
-  .left {
+  #project-tagline {
+    font-size: 1.9em;
+  }
+  #project-tagline .left {
     color: #000;
     background-color: #fff;
   }
-  .right {
+  #project-tagline .right {
     color: #fff;
     font-weight: 200;
-    font-size: 1.9rem;
     background-color: #000;
   }
   input, textarea {
@@ -56,7 +58,7 @@
   <figure class="slide light-text">
     <div class="lazy darken" data-src="assets/contact/contact_hero.png"></div>
     <figcaption class="overlay">
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title">Thanks for your inquiry.<span>I'll be in touch ASAP.</span></h1>
     </figcaption>
   </figure>
 </section>
@@ -75,9 +77,7 @@
       </address>
     </article>
     <article class="right">
-      <dl class="with-dt-mdash">
-        <dt style="font-size:2rem; font-weight:400;">Freelance Inquiries</dt>
-      </dl>
+      <span style="font-size: 2rem; font-weight: 600;">&mdash;&nbsp;Freelance Inquiries</span><br/><br/>
       <form action="webformmailer.php" method="post">
         <input type="hidden" name="subject" value="Freelance Inquiry">
         <input type="hidden" name="redirect" value="email-sent.php">

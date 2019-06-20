@@ -16,8 +16,8 @@
 </section>
 
 <section id="project-tagline" class="hidden display-after-load">
-  <div class="container">
-    <article class="project-description">
+  <div class="flex-container">
+    <article class="left">
       While at Gowlings, I was responsible for the concept and design of project documents, 
       proposal pitches, tradeshow materials, advertising and digital marketing assets. 
       I was the lead in-house designer during an extensive rebrand of the firm and worked 
@@ -25,7 +25,7 @@
       Once approved, it was my responsibility to create all of the pieces the firm required, 
       from mailing labels, stationary, powerpoint templates, etc.
     </article>
-    <article class="project-components">
+    <article class="right">
       <dl>
         <dt>Project Components:</dt>
         <dd>Art &amp; Creative Direction</dd>
@@ -51,6 +51,5 @@
 </section>
 
 <?php
-  include "templates/next-prev-project.php";
 	include "templates/footer.php";
 ?>
