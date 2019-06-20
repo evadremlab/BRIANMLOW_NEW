@@ -7,7 +7,7 @@
   <figure class="slide light-text">
     <div class="lazy darken" data-src="assets/about/about_me.png"></div>7
     <figcaption class="overlay">
-      <h2 class="title"><?php echo $title; ?></h2>
+      <h1 class="title"><?php echo $title; ?></h1>
     </figcaption>
   </figure>
 </section>

@@ -1,5 +1,5 @@
 <?php
-	$title = "Contact";
+	$title = "Contact Me";
 	include "templates/header.php";
 ?>
 

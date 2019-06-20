@@ -116,7 +116,7 @@ nav#slideout-menu.open {
   /* font-size: 2rem;
   line-height: 2rem; */
   color: #111;
-  padding: 5vh 1rem 3vh 1rem;
+  padding: 8% 0 0 10%; /* responsive position */
 }
 .light-text .overlay {
   color: #fff;
@@ -164,13 +164,13 @@ figure.bennett h1 { /* so dark text is readable on dark part of image */
 .slide img {
   width: 100%; /* scale to fit window */
 }
-#slideshow .lazy {
+#slideshow div.lazy {
   height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-#brose-page .lazy {
+#brose-page div.lazy {
   background-position: top center;
 }
 
@@ -229,7 +229,6 @@ figure.bennett h1 { /* so dark text is readable on dark part of image */
 #featured-projects .overlay {
   color: #fff;
   /* font-size: 1rem; */
-  padding: 1rem; /* adjust text position */
 }
 #my-work-page #featured-projects .overlay {
   /* top: 5rem;

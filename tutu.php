@@ -10,7 +10,7 @@
     <div class="lazy darken" data-src="assets/tutu/tutu_hero.png"></div>
     <figcaption class="overlay">
       <h2 class="industry">Industry | Food &amp; Beverage</h2>
-      <h1 class="title">TUTU Garden</h1>
+      <h1 class="title"><?php echo $title; ?></h1>
     </figcaption>
   </figure>
 </section>

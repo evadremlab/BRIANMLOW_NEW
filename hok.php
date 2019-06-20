@@ -10,7 +10,7 @@
     <div class="lazy darken" data-src="assets/hok/hok_hero.png"></div>
     <figcaption class="overlay">
       <h2 class="industry">Industry | Architecture</h2>
-      <h1 class="title">HOK</h1>
+      <h1 class="title"><?php echo $title; ?></h1>
     </figcaption>
   </figure>
 </section>

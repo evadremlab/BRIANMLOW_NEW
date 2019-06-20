@@ -10,7 +10,7 @@
     <div class="lazy darken" data-src="assets/crayola/crayola_hero.png"></div>
     <figcaption class="overlay">
       <h2 class="industry">Industry | Consumer Goods</h2>
-      <h1 class="title">Crayola</h1>
+      <h1 class="title"><?php echo $title; ?></h1>
     </figcaption>
   </figure>
 </section>

@@ -10,7 +10,7 @@
     <div class="lazy darken" data-src="assets/sony/sony_hero.png"></div>
     <figcaption class="overlay">
       <h2 class="industry">Industry | Entertainment</h2>
-      <h1 class="title">Sony Insider</h1>
+      <h1 class="title"><?php echo $title; ?></h1>
     </figcaption>
   </figure>
 </section>
