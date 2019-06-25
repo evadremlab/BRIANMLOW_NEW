@@ -1,7 +1,7 @@
 <?php
   include "scripts/functions.php";
   $page_name = strtolower(basename($_SERVER['PHP_SELF'],'.php')) . '-page';
-  $version = "?v=20190618"; // so we know they have this latest version of js/css
+  $version = "?v=20190625a"; // so we know they have this latest version of js/css
 ?>
 <!DOCTYPE html>
 <html lang="en">

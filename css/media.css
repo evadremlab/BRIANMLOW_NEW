@@ -48,6 +48,15 @@
   #my-work-page #featured-projects figure {
     height: 250px;
   }
+  #skills dl {
+    padding: 0 4rem;
+  }
+  #clients .flex-container {
+    padding: 0;
+  }
+  #clients .lazy { /* 3 per row */
+    flex-basis: calc(100% / 3);
+  }
   nav.next-prev-project a {
     font-size: 1.25rem;
   }
@@ -72,6 +81,9 @@
   }
   #featured-projects figure {
     flex-basis: 100% !important; /* expand image width so overlay text is still readable */
+  }
+  #clients .lazy { /* 2 per row */
+    flex-basis: calc(100% / 2);
   }
 }
 

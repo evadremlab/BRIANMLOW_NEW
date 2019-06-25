@@ -372,12 +372,13 @@ dl .item-container {
 #clients .flex-container {
   padding: 0 6rem;
 }
-#clients img { /* 6 per row */
-  padding: 0 10px;
-  max-width: calc(100% / 6);
-  flex: 0 0 calc(100% / 6);
+#clients .lazy { /* 6 per row */
+  height: 100px;
+  flex: 1 0 calc(100% / 6);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
-
 #skills header, #clients header {
   color: #fff;
   background-color: #00ffff;

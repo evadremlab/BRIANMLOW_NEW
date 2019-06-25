@@ -86,24 +86,24 @@
 <section id="clients" class="hidden display-after-load">
   <header>Client's I've worked with</header>
   <div class="flex-container">
-    <img class="lazy" data-src="assets/logos/logo-rio.png">
-    <img class="lazy" data-src="assets/logos/logo-crayola.png">
-    <img class="lazy" data-src="assets/logos/logo-stella.png">
-    <img class="lazy" data-src="assets/logos/logo-kawasaki.png">
-    <img class="lazy" data-src="assets/logos/logo-nutrition.png">
-    <img class="lazy" data-src="assets/logos/logo-spectral.png">
-    <img class="lazy" data-src="assets/logos/logo-tutu.png">
-    <img class="lazy" data-src="assets/logos/logo-brose.png">
-    <img class="lazy" data-src="assets/logos/logo-sony.png">
-    <img class="lazy" data-src="assets/logos/logo-aaron.png">
-    <img class="lazy" data-src="assets/logos/logo-bombardier.png">
-    <img class="lazy" data-src="assets/logos/logo-galle.png">
-    <img class="lazy" data-src="assets/logos/logo-dental.png">
-    <img class="lazy" data-src="assets/logos/logo-magna.png">
-    <img class="lazy" data-src="assets/logos/logo-dundee.png">
-    <img class="lazy" data-src="assets/logos/logo-emaar.png">
-    <img class="lazy" data-src="assets/logos/logo-bell.png">
-    <img class="lazy" data-src="assets/logos/logo-corus-OLD.png">
+    <div class="lazy" data-src="assets/logos/logo-rio.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-crayola.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-stella.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-kawasaki.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-nutrition.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-spectral.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-tutu.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-brose.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-sony.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-aaron.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-bombardier.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-galle.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-dental.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-magna.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-dundee.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-emaar.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-bell.png"></div>
+    <div class="lazy" data-src="assets/logos/logo-corus-OLD.png"></div>
   </div>
 </section>
 
